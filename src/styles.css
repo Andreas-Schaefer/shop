@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+.spacer {
+  width: 100%;
+}
+.bg-color-primary {
+  background-color: coral;
+}
+.bg-color-secondary {
+  background-color: white;
+}
+@media (min-width: 1000px) {
+  .hide-desktop {
+    display: none !important;
+  }
+}
+@media (min-width: 600px) and (max-width: 999px) {
+  .hide-tablet {
+    display: none !important;
+  }
+}
+@media (max-width: 599px) {
+  .hide-mobile {
+    display: none !important;
+  }
+}
+body {
+  margin: 0;
+}

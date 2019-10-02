@@ -7,13 +7,15 @@ import localeDe from '@angular/common/locales/de';
 
 import { AppComponent } from './app.component';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { TopHeaderComponent } from './top-header/top-header.component';
 
 registerLocaleData(localeDe);
 
 @NgModule({
   declarations: [
     AppComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    TopHeaderComponent
   ],
   imports: [
     BrowserModule,
