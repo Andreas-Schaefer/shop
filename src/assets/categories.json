@@ -1,0 +1,46 @@
+{
+  "localeCategories": [
+    {
+      "locale": "en-US",
+      "categories": [
+        {
+          "path": "/cat1",
+          "display": "Category 1"
+        },
+        {
+          "path": "/cat2",
+          "display": "Category 2"
+        },
+        {
+          "path": "/cat3",
+          "display": "Category 3"
+        },
+        {
+          "path": "/cat4",
+          "display": "Category 4"
+        }
+      ]
+    },
+    {
+      "locale": "de",
+      "categories": [
+        {
+          "path": "/cat1",
+          "display": "Kategorie 1"
+        },
+        {
+          "path": "/cat2",
+          "display": "Kategorie 2"
+        },
+        {
+          "path": "/cat3",
+          "display": "Kategorie 3"
+        },
+        {
+          "path": "/cat4",
+          "display": "Kategorie 4"
+        }
+      ]
+    }
+  ]
+}

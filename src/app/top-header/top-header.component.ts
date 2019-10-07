@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {CategoriesService} from '../services/categories.service';
+import {CartService} from '../services/cart.service';
 
 @Component({
   selector: 'app-top-header',
@@ -7,12 +9,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TopHeaderComponent implements OnInit {
 
-  categories = [];
-  constructor() { }
+  styleCategoriesMenuOpen = 'header-categories-menu-open';
+  styleCategoriesMenuClose = 'header-categories-menu-close';
+  styleCartEmpty = 'header-cart-empty';
+  styleCartFilled = 'header-cart-filled';
+
+  styleCategoriesMenu = this.styleCategoriesMenuOpen;
+  styleCart = this.styleCartEmpty;
+  categories;
+  constructor(
+    private categoriesService: CategoriesService,
+    private cartService: CartService) { }
 
   ngOnInit() {
-    for (let i = 1; i < 5; i++) {
-      this.categories.push({link: 'cat' + i, label: 'Kategorie ' + i});
+    this.categories = this.categoriesService.getCategories();
+    this.cartService.registerOnChange(() => this.updateCartStyle());
+  }
+
+  updateCartStyle() {
+    if (this.cartService.isEmpty()) {
+      this.styleCart = this.styleCartEmpty;
+    } else {
+      this.styleCart = this.styleCartFilled;
     }
   }
 
@@ -23,5 +41,8 @@ export class TopHeaderComponent implements OnInit {
   }
 
   onCart() {
+  }
+
+  onCategories() {
   }
 }

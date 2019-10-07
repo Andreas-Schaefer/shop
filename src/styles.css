@@ -1,13 +1,46 @@
 /* You can add global styles to this file, and also import other style files */
-.spacer {
-  width: 100%;
-}
 .bg-color-primary {
-  background-color: coral;
+  background-color: #FF7700;
 }
 .bg-color-secondary {
-  background-color: white;
+  background-color: #FFFFFF;
 }
+.flex {
+  display: flex;
+}
+.left {
+  display: inherit;
+  margin-right: auto;
+}
+.center {
+  display: inherit;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.right {
+  display: inherit;
+  margin-left: auto;
+}
+.icon {
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 32px;
+}
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:active {
+  text-decoration: none;
+}
+
 @media (min-width: 1000px) {
   .hide-desktop {
     display: none !important;

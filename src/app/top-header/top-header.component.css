@@ -1,13 +1,6 @@
 .header {
   display: flex;
-  min-width: 550px;
-}
-.header-menu {
-  content: url("../../assets/menu.png");
-  width: 50px;
-  height: 50px;
-  cursor: pointer;
-  padding-left: 5px;
+  horiz-align: center;
 }
 .logo {
   padding-left: 5px;
@@ -15,41 +8,77 @@
 }
 .header-text {
   font-size: xx-large;
-  white-space: nowrap;
+  color: white;
+  padding-top: 6px;
+}
+.subheader-text {
+  font-size: xx-large;
   color: white;
   padding-top: 6px;
 }
 .header-categories {
-  display: flex;
-  padding-top: 20px;
+  display: inherit;
+  padding-top: 30px;
 }
 .subheader-categories {
-  display: flex;
   padding-top: 5px;
+  margin-bottom: 5px;
 }
 .header-category {
   color: white;
   white-space: nowrap;
   padding-left: 5px;
   padding-right: 5px;
+  ;
+}
+.header-category-selected {
+  border-bottom-color: #FFFFFF;
+  border-bottom: 2px;
+}
+.header-menu {
+  background-image: url("../../assets/img/menu.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
 }
 .header-search {
-  content: url("../../assets/search.png");
-  width: 50px;
-  height: 50px;
+  background-image: url("../../assets/img/search.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 32px;
   cursor: pointer;
-  padding-left: 5px;
-  padding-right: 5px;
 }
-.header-cart {
-  content: url("../../assets/cart.png");
-  width: 50px;
-  height: 50px;
-  padding-right: 5px;
+.header-cart-empty {
+  background-image: url("../../assets/img/cart-empty.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 32px;
 }
-.header-cart:hover {
-  content: url("../../assets/cart-hover.png");
-  width: 50px;
-  height: 50px;
+.header-cart-filled {
+  background-image: url("../../assets/img/cart-filled.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+.header-categories-menu-open {
+  background-image: url("../../assets/img/categories-open.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+.header-categories-menu-close {
+  background-image: url("../../assets/img/categories-close.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 32px;
   cursor: pointer;
 }
