@@ -12,6 +12,7 @@
       <div class="header-menu icon" (click)="onMenu()"
            i18n-title="@@header-menu-title" title="open menu"></div>
     </div>
+    <div class="center active-category">{{ activeCategory }}</div>
     <div class="right">
       <div class="header-search icon" (click)="onSearch();"
            i18n-title="@@header-search-title" title="open search"></div>
@@ -41,8 +42,8 @@
   </div>
   <div class="flex">
     <div class="subheader-categories right">
-      <div *ngFor="let category of categories | async">
-        <a class="header-category" [routerLink]="category.path">{{ category.display }}</a>
+      <div *ngFor="let category of categories | async" routerLinkActive="active-link">
+        <a class="header-category" [routerLink]="['/category', category.path]">{{ category.display }}</a>
       </div>
     </div>
   </div>
@@ -57,8 +58,8 @@
     </div>
     <div class="right">
       <div class="header-categories">
-          <div *ngFor="let category of categories | async">
-            <a class="header-category" [routerLink]="category.path">{{ category.display }}</a>
+          <div *ngFor="let category of categories | async" routerLinkActive="active-link">
+            <a class="header-category" [routerLink]="['/category', category.path]">{{ category.display }}</a>
           </div>
       </div>
       <div class="header-search icon" (click)="onSearch();"

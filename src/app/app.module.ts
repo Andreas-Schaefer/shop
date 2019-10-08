@@ -9,6 +9,7 @@ import localeDe from '@angular/common/locales/de';
 import { AppComponent } from './app.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { TopHeaderComponent } from './top-header/top-header.component';
+import { CategoryComponent } from './category/category.component';
 
 registerLocaleData(localeDe);
 
@@ -16,18 +17,16 @@ registerLocaleData(localeDe);
   declarations: [
     AppComponent,
     WelcomeComponent,
-    TopHeaderComponent
+    TopHeaderComponent,
+    CategoryComponent
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     RouterModule.forRoot([
       { path: '', component: WelcomeComponent },
-      { path: 'cat1', component: WelcomeComponent },
-      { path: 'cat2', component: WelcomeComponent },
-      { path: 'cat3', component: WelcomeComponent },
-      { path: 'cat4', component: WelcomeComponent },
-    ]),
-    HttpClientModule
+      { path: 'category/:id', component: CategoryComponent },
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -19,6 +19,7 @@
 .header-categories {
   display: inherit;
   padding-top: 24px;
+  margin-bottom: 4px;
 }
 .subheader-categories {
   margin-bottom: 4px;
@@ -28,10 +29,25 @@
   white-space: nowrap;
   padding-left: 4px;
   padding-right: 4px;
+  margin-bottom: 4px;
 }
-.header-category-selected {
+.header-category:hover {
+  background-color: #FF8855;
+}
+.active-category {
+  color: white;
+  white-space: nowrap;
+  padding-top: 6px;
+}
+.active-link {
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom-width: 4px;
+  border-style: solid;
   border-bottom-color: #FFFFFF;
-  border-bottom: 2px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 .header-menu {
   background-image: url("../../assets/img/menu.png");
@@ -80,6 +96,7 @@
   height: 32px;
   cursor: pointer;
   margin-top: 12px;
+  margin-right: 4px;
 }
 .toolbar .header-cart-filled {
   margin-top: unset;
