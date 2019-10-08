@@ -5,6 +5,12 @@
 .bg-color-secondary {
   background-color: #FFFFFF;
 }
+.color-primary {
+  color: #FFFFFF;
+}
+.color-secondary {
+  color: #FF7700;
+}
 .flex {
   display: flex;
 }

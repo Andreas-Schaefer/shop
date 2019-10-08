@@ -32,7 +32,7 @@
   margin-bottom: 4px;
 }
 .header-category:hover {
-  background-color: #FF8855;
+  background-color: #FF9955;
 }
 .active-category {
   color: white;
@@ -48,6 +48,21 @@
   border-bottom-color: #FFFFFF;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+}
+.categories-overlay {
+  position: absolute;
+  right: 0;
+}
+.header-overlay-category {
+  padding: 8px;
+  white-space: nowrap;
+  font-size: large;
+}
+.header-overlay-category:hover {
+  background-color: #FF9955;
+}
+.header-overlay-category-zebra {
+  background-color: #FF9966;
 }
 .header-menu {
   background-image: url("../../assets/img/menu.png");

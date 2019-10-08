@@ -17,6 +17,7 @@ export class TopHeaderComponent implements OnInit {
   styleCategoriesMenuClose = 'header-categories-menu-close';
   styleCartEmpty = 'header-cart-empty';
   styleCartFilled = 'header-cart-filled';
+  categoriesOpened = false;
 
   styleCategoriesMenu = this.styleCategoriesMenuOpen;
   styleCart = this.styleCartEmpty;
@@ -60,6 +61,7 @@ export class TopHeaderComponent implements OnInit {
   }
 
   onCategories() {
+    this.categoriesOpened = !this.categoriesOpened;
   }
 
   private getCategoryDisplay(path) {

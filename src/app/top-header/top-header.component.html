@@ -18,8 +18,21 @@
            i18n-title="@@header-search-title" title="open search"></div>
       <div class="icon" [ngClass]="styleCart" (click)="onCart();"
            i18n-title="@@header-cart-title" title="open shopping cart"></div>
-      <div class="header-categories-menu-open icon" (click)="onCategories();"
+      <div class="icon" [ngClass]="categoriesOpened ? 'header-categories-menu-close' : 'header-categories-menu-open'"
+           (click)="onCategories();"
            i18n-title="@@header-categories-menu-title" title="open categories"></div>
+    </div>
+  </div>
+</div>
+<div class="menu-overlay"></div>
+<div class="categories-overlay bg-color-primary hide-tablet hide-desktop" *ngIf="categoriesOpened">
+  <div>
+    <div class="header-overlay-category"
+         [ngClass]="categoriesArray.indexOf(category) % 2 === 0 ? 'header-overlay-category-zebra' : ''"
+         *ngFor="let category of categories | async">
+      <a class="color-primary" [routerLink]="['/category', category.path]" (click)="onCategories()">
+        {{ category.display }}
+      </a>
     </div>
   </div>
 </div>
