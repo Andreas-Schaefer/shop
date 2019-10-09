@@ -10,6 +10,7 @@ import {AppComponent} from './app.component';
 import {WelcomeComponent} from './welcome/welcome.component';
 import {HeaderComponent} from './top-header/header.component';
 import {CategoryComponent} from './category/category.component';
+import {FocusDirective} from './directives/focus.directive';
 
 registerLocaleData(localeDe);
 
@@ -18,7 +19,8 @@ registerLocaleData(localeDe);
     AppComponent,
     WelcomeComponent,
     HeaderComponent,
-    CategoryComponent
+    CategoryComponent,
+    FocusDirective
   ],
   imports: [
     BrowserModule,

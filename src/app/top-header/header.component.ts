@@ -3,7 +3,7 @@ import {CategoriesService} from '../services/categories/categories.service';
 import {CartService} from '../services/cart/cart.service';
 import {Router, RoutesRecognized} from '@angular/router';
 import {filter, map, tap} from 'rxjs/operators';
-import {merge} from 'rxjs';
+import {merge, Subject} from 'rxjs';
 import {detectSizeMode, SizeMode} from '../services/responsive/responsive';
 
 @Component({
@@ -14,6 +14,7 @@ import {detectSizeMode, SizeMode} from '../services/responsive/responsive';
 export class HeaderComponent implements OnInit {
 
   @Input() outerClickObserver;
+  searchFocusObserver: Subject<void> = new Subject<void>();
 
   sizeMode: SizeMode = SizeMode.DESKTOP;
 
@@ -43,13 +44,13 @@ export class HeaderComponent implements OnInit {
       .pipe(filter(event => event instanceof RoutesRecognized))
       .pipe(map((value: RoutesRecognized) => value.urlAfterRedirects))
       .pipe(tap(url => this.currentUrl = url));
-    merge(this.categories, this.routerEvents).subscribe(value => this.updateActiveCategory());
+    merge(this.categories, this.routerEvents).subscribe(() => this.updateActiveCategory());
     this.cartService.registerOnChange(() => this.updateCartStyle());
     this.outerClickObserver.subscribe(() => this.categoriesOpened = false);
   }
 
   @HostListener('window:resize', ['$event'])
-  onResize(event) {
+  onResize() {
     this.sizeMode = detectSizeMode(window.innerWidth);
     if (this.sizeMode !== SizeMode.MOBILE) {
       this.categoriesOpened = false;
@@ -69,6 +70,7 @@ export class HeaderComponent implements OnInit {
 
   onOpenSearch() {
     this.searchFieldVisible = true;
+    this.searchFocusObserver.next();
   }
 
   onSearch(value) {
@@ -84,15 +86,6 @@ export class HeaderComponent implements OnInit {
 
   onCategories() {
     this.categoriesOpened = !this.categoriesOpened;
-  }
-
-  private getCategoryDisplay(path) {
-    for (const category of this.categories) {
-      if (category.path === path) {
-        console.log('Category to display: ' + category.display);
-        return category.display;
-      }
-    }
   }
 
   private updateActiveCategory() {

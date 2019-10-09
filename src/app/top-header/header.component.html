@@ -1,9 +1,10 @@
+<div [focusObserver]="searchFocusObserver" appFocus cssSelector=".header-search-input"></div>
 <!-- Mobile -->
 <div *ngIf="sizeMode === 0" class="bg-color-primary">
   <div class="flex">
     <div class="center">
       <a routerLink=""><img class="logo" src="../../assets/img/logo.png"
-           i18n-alt="@@header-logo-alt" alt="Shop Logo"></a>
+                            alt="Shop Logo" i18n-alt="@@header-logo-alt"></a>
       <div class="header-text" i18n="@@header-text">Welcome to the Shop!</div>
     </div>
   </div>
@@ -12,10 +13,10 @@
       <div class="header-menu icon" (click)="onMenu()"
            i18n-title="@@header-menu-title" title="open menu"></div>
     </div>
-    <div class="center active-category">{{ activeCategory }}</div>
+    <div *ngIf="!searchFieldVisible" class="center active-category">{{ activeCategory }}</div>
     <div class="right">
       <div *ngIf="searchFieldVisible" class="header-search-area">
-        <input #search (keyup.enter)="onSearch(search.value);"
+        <input #search (keyup.enter)=" onSearch(search.value);"
                aria-label="search" class="header-search-input" i18n-placeholder="@@header-search-placeholder"
                placeholder="Search" type="search">
         <div (click)="onSearch(search.value);" class="header-search icon"
@@ -51,7 +52,7 @@
            i18n-title="@@header-menu-title" title="open menu"></div>
       <a routerLink=""><img class="logo" src="../../assets/img/logo.png"
                             i18n-alt="@@header-logo-alt" alt="Shop Logo"></a>
-      <div class="header-text" i18n="@@header-text">Welcome to the Shop!</div>
+      <div *ngIf="!searchFieldVisible" class="header-text" i18n="@@header-text">Welcome to the Shop!</div>
     </div>
     <div class="right">
       <div *ngIf="searchFieldVisible" class="header-search-area">
@@ -85,10 +86,10 @@
       <div class="header-text" i18n="@@header-text">Welcome to the Shop!</div>
     </div>
     <div class="right">
-      <div class="header-categories">
-          <div *ngFor="let category of categories | async" routerLinkActive="active-link">
-            <a class="header-category" [routerLink]="['/category', category.path]">{{ category.display }}</a>
-          </div>
+      <div *ngIf="!searchFieldVisible" class="header-categories">
+        <div *ngFor="let category of categories | async" routerLinkActive="active-link">
+          <a [routerLink]="['/category', category.path]" class="header-category">{{ category.display }}</a>
+        </div>
       </div>
       <div *ngIf="searchFieldVisible" class="header-search-area">
         <input #search (keyup.enter)="onSearch(search.value);"
