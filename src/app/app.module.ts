@@ -8,9 +8,10 @@ import localeDe from '@angular/common/locales/de';
 
 import {AppComponent} from './app.component';
 import {WelcomeComponent} from './welcome/welcome.component';
-import {HeaderComponent} from './top-header/header.component';
+import {HeaderComponent} from './header/header.component';
 import {CategoryComponent} from './category/category.component';
 import {FocusDirective} from './directives/focus.directive';
+import {MenuComponent} from './menu/menu.component';
 
 registerLocaleData(localeDe);
 
@@ -20,7 +21,8 @@ registerLocaleData(localeDe);
     WelcomeComponent,
     HeaderComponent,
     CategoryComponent,
-    FocusDirective
+    FocusDirective,
+    MenuComponent
   ],
   imports: [
     BrowserModule,

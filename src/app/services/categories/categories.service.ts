@@ -8,7 +8,9 @@ import {map} from 'rxjs/operators';
 })
 export class CategoriesService {
 
-  constructor(private http: HttpClient, @Inject(LOCALE_ID) private localeId: string) { }
+  constructor(private http: HttpClient, @Inject(LOCALE_ID) private localeId: string) {
+  }
+
   public getCategories() {
     return this.http.get<Categories>('/assets/categories.json')
       .pipe(map(data => {

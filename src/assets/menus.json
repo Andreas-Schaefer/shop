@@ -1,0 +1,258 @@
+{
+  "localeMenus": [
+    {
+      "locale": "en-US",
+      "menus": [
+        {
+          "path": "menu1",
+          "display": "Menu 1",
+          "children": [
+            {
+              "path": "subMenu1",
+              "display": "Sub Menu 1",
+              "children": [
+                {
+                  "path": "subSubMenu1",
+                  "display": "Sub Sub Menu 1",
+                  "children": []
+                },
+                {
+                  "path": "subSubMenu2",
+                  "display": "Sub Sub Menu 2",
+                  "children": []
+                },
+                {
+                  "path": "subSubMenu3",
+                  "display": "Sub Sub Menu 3",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "path": "subMenu2",
+              "display": "Sub Menu 2",
+              "children": [
+                {
+                  "path": "subSubMenu4",
+                  "display": "Sub Sub Menu 4",
+                  "children": []
+                },
+                {
+                  "path": "subSubMenu5",
+                  "display": "Sub Sub Menu 5",
+                  "children": []
+                },
+                {
+                  "path": "subSubMenu6",
+                  "display": "Sub Sub Menu 6",
+                  "children": []
+                },
+                {
+                  "path": "subSubMenu7",
+                  "display": "Sub Sub Menu 7",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "path": "subMenu3",
+              "display": "Sub Menu 3",
+              "children": [
+                {
+                  "path": "subSubMenu8",
+                  "display": "Sub Sub Menu 8",
+                  "children": []
+                },
+                {
+                  "path": "subSubMenu9",
+                  "display": "Sub Sub Menu 9",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "path": "menu2",
+          "display": "Menu 2",
+          "children": [
+            {
+              "path": "subMenu4",
+              "display": "Sub Menu 4",
+              "children": [
+                {
+                  "path": "subSubMenu10",
+                  "display": "Sub Sub Menu 10",
+                  "children": []
+                },
+                {
+                  "path": "subSubMenu11",
+                  "display": "Sub Sub Menu 11",
+                  "children": []
+                },
+                {
+                  "path": "subSubMenu12",
+                  "display": "Sub Sub Menu 12",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "path": "subMenu5",
+              "display": "Sub Menu 5",
+              "children": [
+                {
+                  "path": "subSubMenu13",
+                  "display": "Sub Sub Menu 13",
+                  "children": []
+                },
+                {
+                  "path": "subSubMenu14",
+                  "display": "Sub Sub Menu 14",
+                  "children": []
+                },
+                {
+                  "path": "subSubMenu15",
+                  "display": "Sub Sub Menu 15",
+                  "children": []
+                },
+                {
+                  "path": "subSubMenu7",
+                  "display": "Sub Sub Menu 16",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locale": "de",
+      "menus": [
+        {
+          "path": "menu1",
+          "display": "Menü 1",
+          "children": [
+            {
+              "path": "subMenu1",
+              "display": "Untermenü 1",
+              "children": [
+                {
+                  "path": "subSubMenu1",
+                  "display": "Unter Untermenü 1",
+                  "children": []
+                },
+                {
+                  "path": "subSubMenu2",
+                  "display": "Unter Untermenü 2",
+                  "children": []
+                },
+                {
+                  "path": "subSubMenu3",
+                  "display": "Unter Untermenü 3",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "path": "subMenu2",
+              "display": "Untermenü 2",
+              "children": [
+                {
+                  "path": "subSubMenu4",
+                  "display": "Unter Untermenü 4",
+                  "children": []
+                },
+                {
+                  "path": "subSubMenu5",
+                  "display": "Unter Untermenü 5",
+                  "children": []
+                },
+                {
+                  "path": "subSubMenu6",
+                  "display": "Unter Untermenü 6",
+                  "children": []
+                },
+                {
+                  "path": "subSubMenu7",
+                  "display": "Unter Untermenü 7",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "path": "subMenu3",
+              "display": "Untermenü 3",
+              "children": [
+                {
+                  "path": "subSubMenu8",
+                  "display": "Unter Untermenü 8",
+                  "children": []
+                },
+                {
+                  "path": "subSubMenu9",
+                  "display": "Unter Untermenü 9",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "path": "menu2",
+          "display": "Menü 2",
+          "children": [
+            {
+              "path": "subMenu4",
+              "display": "Untermenü 4",
+              "children": [
+                {
+                  "path": "subSubMenu10",
+                  "display": "Unter Untermenü 10",
+                  "children": []
+                },
+                {
+                  "path": "subSubMenu11",
+                  "display": "Unter Untermenü 11",
+                  "children": []
+                },
+                {
+                  "path": "subSubMenu12",
+                  "display": "Unter Untermenü 12",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "path": "subMenu5",
+              "display": "Untermenü 5",
+              "children": [
+                {
+                  "path": "subSubMenu13",
+                  "display": "Unter Untermenü 13",
+                  "children": []
+                },
+                {
+                  "path": "subSubMenu14",
+                  "display": "Unter Untermenü 14",
+                  "children": []
+                },
+                {
+                  "path": "subSubMenu15",
+                  "display": "Unter Untermenü 15",
+                  "children": []
+                },
+                {
+                  "path": "subSubMenu7",
+                  "display": "Unter Untermenü 16",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

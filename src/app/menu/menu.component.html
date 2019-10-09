@@ -1,0 +1,6 @@
+<div class="menu bg-color-primary">
+  <div *ngFor="let menu of menus | async" class="menu-category">
+    <a [routerLink]="['/menu', menu.path]" class="color-primary">{{ menu.display }}</a>
+
+  </div>
+</div>

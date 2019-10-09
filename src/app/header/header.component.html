@@ -32,7 +32,9 @@
     </div>
   </div>
 </div>
-<div *ngIf="menuOpened && sizeMode === 0" class="menu-overlay"></div>
+<div *ngIf="menuOpened && sizeMode === 0" class="menu-overlay">
+  <app-menu></app-menu>
+</div>
 <div *ngIf="categoriesOpened && sizeMode === 0" class="categories-overlay bg-color-primary">
   <div>
     <div class="header-overlay-category"

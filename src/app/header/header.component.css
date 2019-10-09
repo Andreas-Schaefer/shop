@@ -2,28 +2,34 @@
   display: flex;
   horiz-align: center;
 }
+
 .logo {
   padding-left: 5px;
   padding-right: 5px;
 }
+
 .header-text {
   font-size: xx-large;
   color: white;
   padding-top: 6px;
 }
+
 .subheader-text {
   font-size: xx-large;
   color: white;
   padding-top: 6px;
 }
+
 .header-categories {
   display: inherit;
   padding-top: 24px;
   margin-bottom: 4px;
 }
+
 .subheader-categories {
   margin-bottom: 4px;
 }
+
 .header-category {
   color: white;
   white-space: nowrap;
@@ -31,14 +37,17 @@
   padding-right: 4px;
   margin-bottom: 4px;
 }
+
 .header-category:hover {
   background-color: #FF9955;
 }
+
 .active-category {
   color: white;
   white-space: nowrap;
   padding-top: 6px;
 }
+
 .active-link {
   border-top: 0;
   border-left: 0;
@@ -49,21 +58,37 @@
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
 }
+
+.menu-overlay {
+  position: absolute;
+  left: 0;
+}
+
+.header-overlay-menu {
+  padding: 8px;
+  white-space: nowrap;
+  font-size: large;
+}
+
 .categories-overlay {
   position: absolute;
   right: 0;
 }
+
 .header-overlay-category {
   padding: 8px;
   white-space: nowrap;
   font-size: large;
 }
+
 .header-overlay-category:hover {
   background-color: #FF9955;
 }
+
 .header-overlay-category-zebra {
   background-color: #FF9966;
 }
+
 .header-menu {
   background-image: url("../../assets/img/menu.png");
   background-size: contain;
@@ -74,9 +99,11 @@
   margin-top: 12px;
   margin-left: 4px;
 }
+
 .toolbar .header-menu {
   margin-top: unset;
 }
+
 .header-search {
   background-image: url("../../assets/img/search.png");
   background-size: contain;
@@ -86,18 +113,22 @@
   cursor: pointer;
   margin-top: 12px;
 }
+
 .toolbar .header-search {
   margin-top: unset;
 }
+
 .header-search-area {
   display: inherit;
 }
+
 .header-search-input {
   border-style: hidden;
   border-radius: 16px;
   padding: 5px 16px;
   margin: auto;
 }
+
 .header-cart-empty {
   background-image: url("../../assets/img/cart-empty.png");
   background-size: contain;
@@ -108,10 +139,12 @@
   margin-top: 12px;
   margin-right: 4px;
 }
+
 .toolbar .header-cart-empty {
   margin-top: unset;
   margin-right: unset;
 }
+
 .header-cart-filled {
   background-image: url("../../assets/img/cart-filled.png");
   background-size: contain;
@@ -122,10 +155,12 @@
   margin-top: 12px;
   margin-right: 4px;
 }
+
 .toolbar .header-cart-filled {
   margin-top: unset;
   margin-right: unset;
 }
+
 .header-categories-menu-open {
   background-image: url("../../assets/img/categories-open.png");
   background-size: contain;
@@ -135,6 +170,7 @@
   cursor: pointer;
   margin-right: 4px;
 }
+
 .header-categories-menu-close {
   background-image: url("../../assets/img/categories-close.png");
   background-size: contain;
