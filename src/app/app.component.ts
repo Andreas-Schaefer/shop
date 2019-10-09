@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+import {Subject} from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -6,4 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  clickObserver: Subject<void> = new Subject<void>();
+
+  onContentClick() {
+    this.clickObserver.next();
+  }
 }

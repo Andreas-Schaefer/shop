@@ -1,38 +1,42 @@
-import { Component, OnInit } from '@angular/core';
-import { CategoriesService } from '../services/categories.service';
-import { CartService } from '../services/cart.service';
-import { Router, RoutesRecognized } from '@angular/router';
-import { filter, map, tap } from 'rxjs/operators';
-import { Observable, combineLatest, merge } from 'rxjs';
-import { Category } from '../services/categories';
+import {Component, HostListener, Input, OnInit} from '@angular/core';
+import {CategoriesService} from '../services/categories/categories.service';
+import {CartService} from '../services/cart/cart.service';
+import {Router, RoutesRecognized} from '@angular/router';
+import {filter, map, tap} from 'rxjs/operators';
+import {merge} from 'rxjs';
+import {detectSizeMode, SizeMode} from '../services/responsive/responsive';
 
 @Component({
   selector: 'app-top-header',
-  templateUrl: './top-header.component.html',
-  styleUrls: ['./top-header.component.css']
+  templateUrl: './header.component.html',
+  styleUrls: ['./header.component.css']
 })
-export class TopHeaderComponent implements OnInit {
+export class HeaderComponent implements OnInit {
 
-  styleCategoriesMenuOpen = 'header-categories-menu-open';
-  styleCategoriesMenuClose = 'header-categories-menu-close';
-  styleCartEmpty = 'header-cart-empty';
-  styleCartFilled = 'header-cart-filled';
+  @Input() outerClickObserver;
+
+  sizeMode: SizeMode = SizeMode.DESKTOP;
+
   categoriesOpened = false;
+  menuOpened = false;
 
-  styleCategoriesMenu = this.styleCategoriesMenuOpen;
-  styleCart = this.styleCartEmpty;
+  styleCart = 'header-cart-empty';
   categories;
   categoriesArray;
   currentUrl;
   routerEvents;
   activeCategory;
+  searchFieldVisible = false;
+
   constructor(
     private categoriesService: CategoriesService,
     private cartService: CartService,
     private router: Router
-  ) { }
+  ) {
+  }
 
   ngOnInit() {
+    this.sizeMode = detectSizeMode(window.innerWidth);
     this.categories = this.categoriesService.getCategories()
       .pipe(tap(value => this.fillCategories(value)));
     this.routerEvents = this.router.events
@@ -41,20 +45,38 @@ export class TopHeaderComponent implements OnInit {
       .pipe(tap(url => this.currentUrl = url));
     merge(this.categories, this.routerEvents).subscribe(value => this.updateActiveCategory());
     this.cartService.registerOnChange(() => this.updateCartStyle());
+    this.outerClickObserver.subscribe(() => this.categoriesOpened = false);
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event) {
+    this.sizeMode = detectSizeMode(window.innerWidth);
+    if (this.sizeMode !== SizeMode.MOBILE) {
+      this.categoriesOpened = false;
+    }
   }
 
   updateCartStyle() {
     if (this.cartService.isEmpty()) {
-      this.styleCart = this.styleCartEmpty;
+      this.styleCart = 'header-cart-empty';
     } else {
-      this.styleCart = this.styleCartFilled;
+      this.styleCart = 'header-cart-filled';
     }
   }
 
   onMenu() {
   }
 
-  onSearch() {
+  onOpenSearch() {
+    this.searchFieldVisible = true;
+  }
+
+  onSearch(value) {
+    if (value.length > 0) {
+      this.executeSearch(value);
+    } else {
+      this.searchFieldVisible = false;
+    }
   }
 
   onCart() {
@@ -88,5 +110,10 @@ export class TopHeaderComponent implements OnInit {
 
   private fillCategories(value) {
     this.categoriesArray = value;
+  }
+
+  private executeSearch(value) {
+    this.searchFieldVisible = false;
+    alert('search for "' + value + '" executed');
   }
 }

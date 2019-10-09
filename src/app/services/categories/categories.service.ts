@@ -1,7 +1,7 @@
 import {Inject, Injectable, LOCALE_ID} from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { Categories } from './categories';
-import { map } from 'rxjs/operators';
+import {HttpClient} from '@angular/common/http';
+import {Categories} from './categories';
+import {map} from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root',

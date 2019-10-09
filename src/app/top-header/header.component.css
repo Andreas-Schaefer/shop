@@ -89,6 +89,17 @@
 .toolbar .header-search {
   margin-top: unset;
 }
+
+.header-search-area {
+  display: inherit;
+}
+
+.header-search-input {
+  border-style: hidden;
+  border-radius: 16px;
+  margin: 1px;
+  padding: 5px 16px;
+}
 .header-cart-empty {
   background-image: url("../../assets/img/cart-empty.png");
   background-size: contain;

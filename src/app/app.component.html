@@ -1,4 +1,4 @@
-<app-top-header></app-top-header>
-<div>
+<app-top-header [outerClickObserver]="clickObserver"></app-top-header>
+<div (click)="onContentClick()">
   <router-outlet></router-outlet>
 </div>

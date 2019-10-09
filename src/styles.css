@@ -47,17 +47,19 @@ a:active {
   text-decoration: none;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1025px) {
   .hide-desktop {
     display: none !important;
   }
 }
-@media (min-width: 600px) and (max-width: 999px) {
+
+@media (min-width: 513px) and (max-width: 1024px) {
   .hide-tablet {
     display: none !important;
   }
 }
-@media (max-width: 599px) {
+
+@media (max-width: 512px) {
   .hide-mobile {
     display: none !important;
   }
