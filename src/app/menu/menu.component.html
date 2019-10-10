@@ -1,6 +1,12 @@
-<div class="menu bg-color-primary">
-  <div *ngFor="let menu of menus | async" class="menu-category">
-    <a [routerLink]="['/menu', menu.path]" class="color-primary">{{ menu.display }}</a>
-
+<div class="menu bg-color-secondary">
+  <div class="menu-entries">
+    <div (click)="onHideMenu()"
+         class="menu-category color-secondary close-entry hover-light bg-color-secondary hide-tablet hide-desktop"
+         i18n="@@menu-close">
+      CLOSE
+    </div>
+    <div *ngFor="let menu of menus | async" class="menu-category hover-light">
+      <a [routerLink]="['/menu', menu.path]" class="color-secondary">{{ menu.display }}</a>
+    </div>
   </div>
 </div>

@@ -1,4 +1,4 @@
-import {Component, HostListener, Input, OnInit} from '@angular/core';
+import {Component, EventEmitter, HostListener, Input, OnInit, Output} from '@angular/core';
 import {CategoriesService} from '../services/categories/categories.service';
 import {CartService} from '../services/cart/cart.service';
 import {Router, RoutesRecognized} from '@angular/router';
@@ -14,12 +14,13 @@ import {detectSizeMode, SizeMode} from '../services/responsive/responsive';
 export class HeaderComponent implements OnInit {
 
   @Input() outerClickObserver;
+  @Output() showShadow = new EventEmitter<boolean>();
   searchFocusObserver: Subject<void> = new Subject<void>();
 
   sizeMode: SizeMode = SizeMode.DESKTOP;
 
-  categoriesOpened = false;
   menuOpened = false;
+  categoriesOpened = false;
 
   styleCart = 'header-cart-empty';
   categories;
@@ -46,7 +47,7 @@ export class HeaderComponent implements OnInit {
       .pipe(tap(url => this.currentUrl = url));
     merge(this.categories, this.routerEvents).subscribe(() => this.updateActiveCategory());
     this.cartService.registerOnChange(() => this.updateCartStyle());
-    this.outerClickObserver.subscribe(() => this.categoriesOpened = false);
+    this.outerClickObserver.subscribe(() => this.closeOpenMenus());
   }
 
   @HostListener('window:resize', ['$event'])
@@ -54,6 +55,10 @@ export class HeaderComponent implements OnInit {
     this.sizeMode = detectSizeMode(window.innerWidth);
     if (this.sizeMode !== SizeMode.MOBILE) {
       this.categoriesOpened = false;
+    }
+    if (this.sizeMode === SizeMode.DESKTOP) {
+      this.menuOpened = false;
+      this.showShadow.emit(false);
     }
   }
 
@@ -67,6 +72,7 @@ export class HeaderComponent implements OnInit {
 
   onMenu() {
     this.menuOpened = !this.menuOpened;
+    this.showShadow.emit(this.menuOpened);
   }
 
   onOpenSearch() {
@@ -100,6 +106,12 @@ export class HeaderComponent implements OnInit {
       }
     }
     this.activeCategory = '';
+  }
+
+  private closeOpenMenus() {
+    this.menuOpened = false;
+    this.showShadow.emit(false);
+    this.categoriesOpened = false;
   }
 
   private fillCategories(value) {

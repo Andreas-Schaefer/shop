@@ -1,4 +1,10 @@
-<app-top-header [outerClickObserver]="clickObserver"></app-top-header>
-<div (click)="onContentClick()">
-  <router-outlet></router-outlet>
+<div class="main-content">
+  <app-top-header (showShadow)="onShowShadow($event)" [outerClickObserver]="clickObserver"></app-top-header>
+  <div (click)="onContentClick()">
+    <app-menu *ngIf="sizeMode === 2" class="navigation-container"></app-menu>
+    <div class="content-container">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+  <div (click)="hideGlassPane()" [ngClass]="glassPane"></div>
 </div>

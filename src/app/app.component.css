@@ -1,1 +1,62 @@
+.glass-pane-hidden {
+  display: none;
+}
 
+.glass-pane {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 100;
+  background-color: black;
+  opacity: 0.5;
+}
+
+@media (max-width: 512px) {
+  .content-container {
+    position: unset;
+  }
+
+  .main-content {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow-y: auto;
+  }
+}
+
+@media (min-width: 513px) and (max-width: 1024px) {
+  .content-container {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 80px;
+    bottom: 0;
+    overflow-y: auto;
+  }
+}
+
+@media (min-width: 1025px) {
+  .navigation-container {
+    position: fixed;
+    left: 0;
+    top: 54px;
+    bottom: 0;
+    width: 300px;
+    overflow-y: auto;
+  }
+
+  .content-container {
+    position: fixed;
+    left: 301px;
+    right: 0;
+    top: 54px;
+    bottom: 0;
+    overflow-y: auto;
+  }
+}

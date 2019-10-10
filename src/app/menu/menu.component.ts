@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 import {MenuService} from '../services/menu/menu.service';
 
 @Component({
@@ -8,6 +8,7 @@ import {MenuService} from '../services/menu/menu.service';
 })
 export class MenuComponent implements OnInit {
 
+  @Output() hideMenu: EventEmitter<void> = new EventEmitter<void>();
   menus;
 
   constructor(private menuService: MenuService) {
@@ -15,5 +16,9 @@ export class MenuComponent implements OnInit {
 
   ngOnInit() {
     this.menus = this.menuService.getMenus();
+  }
+
+  onHideMenu() {
+    this.hideMenu.emit();
   }
 }

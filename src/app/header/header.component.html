@@ -1,6 +1,6 @@
 <div [focusObserver]="searchFocusObserver" appFocus cssSelector=".header-search-input"></div>
 <!-- Mobile -->
-<div *ngIf="sizeMode === 0" class="bg-color-primary">
+<div *ngIf="sizeMode === 0" class="bg-color-primary header-container">
   <div class="flex">
     <div class="center">
       <a routerLink=""><img class="logo" src="../../assets/img/logo.png"
@@ -33,11 +33,11 @@
   </div>
 </div>
 <div *ngIf="menuOpened && sizeMode === 0" class="menu-overlay">
-  <app-menu></app-menu>
+  <app-menu (hideMenu)="onMenu()"></app-menu>
 </div>
 <div *ngIf="categoriesOpened && sizeMode === 0" class="categories-overlay bg-color-primary">
   <div>
-    <div class="header-overlay-category"
+    <div class="header-overlay-category hover-dark"
          [ngClass]="categoriesArray.indexOf(category) % 2 === 0 ? 'header-overlay-category-zebra' : ''"
          *ngFor="let category of categories | async">
       <a class="color-primary" [routerLink]="['/category', category.path]" (click)="onCategories()">
@@ -47,7 +47,7 @@
   </div>
 </div>
 <!-- Tablet -->
-<div *ngIf="sizeMode === 1" class="bg-color-primary">
+<div *ngIf="sizeMode === 1" class="bg-color-primary header-container">
   <div class="flex">
     <div class="left">
       <div class="header-menu icon" (click)="onMenu()"
@@ -73,14 +73,16 @@
   <div class="flex">
     <div class="subheader-categories right">
       <div *ngFor="let category of categories | async" routerLinkActive="active-link">
-        <a class="header-category" [routerLink]="['/category', category.path]">{{ category.display }}</a>
+        <a [routerLink]="['/category', category.path]" class="header-category hover-dark">{{ category.display }}</a>
       </div>
     </div>
   </div>
 </div>
-<div *ngIf="menuOpened && sizeMode === 0" class="menu-overlay"></div>
+<div *ngIf="menuOpened && sizeMode === 1" class="menu-overlay">
+  <app-menu></app-menu>
+</div>
 <!-- Desktop -->
-<div *ngIf="sizeMode === 2" class="bg-color-primary">
+<div *ngIf="sizeMode === 2" class="bg-color-primary header-container">
   <div class="flex">
     <div class="left">
       <a routerLink=""><img class="logo" src="../../assets/img/logo.png"
@@ -90,7 +92,7 @@
     <div class="right">
       <div *ngIf="!searchFieldVisible" class="header-categories">
         <div *ngFor="let category of categories | async" routerLinkActive="active-link">
-          <a [routerLink]="['/category', category.path]" class="header-category">{{ category.display }}</a>
+          <a [routerLink]="['/category', category.path]" class="header-category hover-dark">{{ category.display }}</a>
         </div>
       </div>
       <div *ngIf="searchFieldVisible" class="header-search-area">
