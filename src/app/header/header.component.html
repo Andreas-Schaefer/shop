@@ -32,7 +32,7 @@
     </div>
   </div>
 </div>
-<div *ngIf="menuOpened && sizeMode === 0" class="menu-overlay">
+<div [ngClass]="menuOpened && sizeMode === 0 ? '' : 'hide'" class="menu-overlay">
   <app-menu (hideMenu)="onMenu()"></app-menu>
 </div>
 <div *ngIf="categoriesOpened && sizeMode === 0" class="categories-overlay bg-color-primary">
@@ -78,7 +78,7 @@
     </div>
   </div>
 </div>
-<div *ngIf="menuOpened && sizeMode === 1" class="menu-overlay">
+<div [ngClass]="menuOpened && sizeMode === 1 ? '' : 'hide'" class="menu-overlay bg-color-secondary">
   <app-menu></app-menu>
 </div>
 <!-- Desktop -->

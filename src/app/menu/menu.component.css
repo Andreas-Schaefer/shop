@@ -10,16 +10,12 @@
   }
 }
 
-.content {
-
-}
-
 .close-entry {
   cursor: pointer;
+  font-size: x-large;
 }
 
-.menu-category {
+.menu-entry {
   padding: 8px;
   white-space: nowrap;
-  font-size: large;
 }

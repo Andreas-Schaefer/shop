@@ -1,0 +1,27 @@
+
+.menu-entry {
+  padding: 8px;
+  white-space: nowrap;
+}
+
+@media (min-width: 513px) {
+  .sub-menu {
+    padding-left: 16px;
+  }
+}
+
+.active-link {
+  font-weight: bold;
+}
+
+.level-1 {
+  font-size: x-large;
+}
+
+.level-2 {
+  font-size: large;
+}
+
+.level-3 {
+  font-size: small;
+}

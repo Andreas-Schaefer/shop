@@ -1,0 +1,11 @@
+<div class="menu-entry-container">
+  <a (click)="onEntryClick()" [routerLink]="['/page', menuEntry.path]" routerLinkActive="active-link">
+    <div [ngClass]="level === 0 ? 'level-1' : level === 1 ? 'level-2' : 'level-3'"
+         class="menu-entry hover-light color-secondary">
+      {{ menuEntry.display }}
+    </div>
+  </a>
+  <div *ngFor="let childEntry of menuEntry.children" [ngClass]="childrenVisible ? '' : 'hide'" class="sub-menu">
+    <app-menu-entry [level]="level + 1" [menuEntry]="childEntry"></app-menu-entry>
+  </div>
+</div>

@@ -165,7 +165,7 @@
 }
 
 .header-categories-menu-open {
-  background-image: url("../../assets/img/categories-open.png");
+  background-image: url("../../assets/img/arrow-down.png"); /* TODO switch usage to styles.css definition*/
   cursor: pointer;
   margin-right: 4px;
 }

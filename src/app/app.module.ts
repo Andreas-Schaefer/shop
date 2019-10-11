@@ -12,6 +12,8 @@ import {HeaderComponent} from './header/header.component';
 import {CategoryComponent} from './category/category.component';
 import {FocusDirective} from './directives/focus.directive';
 import {MenuComponent} from './menu/menu.component';
+import {MenuEntryComponent} from './menu-entry/menu-entry.component';
+import {PageComponent} from './page/page.component';
 
 registerLocaleData(localeDe);
 
@@ -22,17 +24,21 @@ registerLocaleData(localeDe);
     HeaderComponent,
     CategoryComponent,
     FocusDirective,
-    MenuComponent
+    MenuComponent,
+    MenuEntryComponent,
+    PageComponent,
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     RouterModule.forRoot([
-      { path: '', component: WelcomeComponent },
-      { path: 'category/:id', component: CategoryComponent },
+      {path: '', component: WelcomeComponent},
+      {path: 'category/:id', component: CategoryComponent},
+      {path: 'page/:id', component: PageComponent},
     ])
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

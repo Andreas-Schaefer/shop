@@ -67,6 +67,10 @@ a:active {
   background-color: #FF9955 !important;
 }
 
+.hide {
+  display: none !important;
+}
+
 @media (min-width: 1025px) {
   .hide-desktop {
     display: none !important;
