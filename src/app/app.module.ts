@@ -37,7 +37,7 @@ registerLocaleData(localeDe);
       {path: 'page/:id', component: PageComponent},
     ])
   ],
-  providers: [],
+  // providers: [{provide: LOCALE_ID, useValue: 'de'}],
   bootstrap: [AppComponent]
 })
 export class AppModule {

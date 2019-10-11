@@ -1,0 +1,70 @@
+{
+  "localeCategoryContents": [
+    {
+      "locale": "en-US",
+      "elements": [
+        {
+          "type": "h1",
+          "content": "These is a Category 4 header in H1"
+        },
+        {
+          "type": "p",
+          "content": "This is the content of the first paragraph. Nothing special, just a little amount of text."
+        },
+        {
+          "type": "h2",
+          "content": "These is a Category header in H2"
+        },
+        {
+          "type": "p",
+          "content": "This is the content of the second paragraph. Nothing special, just a little amount of text."
+        },
+        {
+          "type": "h3",
+          "content": "These is a Category header in H3"
+        },
+        {
+          "type": "p",
+          "content": "This is the content of the third paragraph. Nothing special, just a little amount of text."
+        },
+        {
+          "type": "p",
+          "content": "These is the last paragraph on Page Category 4."
+        }
+      ]
+    },
+    {
+      "locale": "de",
+      "elements": [
+        {
+          "type": "h1",
+          "content": "Das ist ein Kategorie 4 Header in H1"
+        },
+        {
+          "type": "p",
+          "content": "Das ist der Inhalt des ersten Absatzes. Nichts spezielles, nur ein bisschen Text."
+        },
+        {
+          "type": "h2",
+          "content": "Das ist ein Kategorie Header in H2"
+        },
+        {
+          "type": "p",
+          "content": "Das ist der Inhalt des zweiten Absatzes. Nichts spezielles, nur ein bisschen Text."
+        },
+        {
+          "type": "h3",
+          "content": "Das ist ein Kategorie Header in H3"
+        },
+        {
+          "type": "p",
+          "content": "Das ist der Inhalt des dritten Absatzes. Nichts spezielles, nur ein bisschen Text."
+        },
+        {
+          "type": "p",
+          "content": "Das ist der letzte Absatz auf der Seite Kategorie 4."
+        }
+      ]
+    }
+  ]
+}

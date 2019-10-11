@@ -1,7 +1,8 @@
 import {Inject, Injectable, LOCALE_ID} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
-import {Categories} from './categories';
+import {Categories, CategoryContent, CategoryElement} from './categories';
 import {map} from 'rxjs/operators';
+import {Observable} from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
@@ -12,7 +13,7 @@ export class CategoriesService {
   }
 
   public getCategories() {
-    return this.http.get<Categories>('/assets/categories.json')
+    return this.http.get<Categories>('/assets/categories/categories.json')
       .pipe(map(data => {
         for (const localeCategory of data.localeCategories) {
           if (localeCategory.locale === this.localeId) {
@@ -22,4 +23,17 @@ export class CategoriesService {
         return [];
       }));
   }
+
+  public getCategoryContent(path: string): Observable<CategoryElement[]> {
+    return this.http.get<CategoryContent>('/assets/categories/content-' + path + '.json')
+      .pipe(map(data => {
+        for (const localeCategoryContent of data.localeCategoryContents) {
+          if (localeCategoryContent.locale === this.localeId) {
+            return localeCategoryContent.elements;
+          }
+        }
+        return [];
+      }));
+  }
+
 }
