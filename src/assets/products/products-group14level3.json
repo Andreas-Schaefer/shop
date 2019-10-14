@@ -1,0 +1,318 @@
+{
+  "localeProducts": [
+    {
+      "locale": "en-US",
+      "content": {
+        "elements": [
+          {
+            "type": "h1",
+            "content": "Third level group 14"
+          },
+          {
+            "type": "p",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad autem, consequatur dicta doloremque doloribus, est facere modi perferendis perspiciatis quam quod, ut voluptatem voluptatum. Animi beatae id odio quis sed?"
+          }
+        ],
+        "products": [
+          {
+            "title": "Product 000001",
+            "link": "product/000001",
+            "imagePath": "../../assets/img/card-sample.png",
+            "imageAlt": "Product Image",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad autem, consequatur dicta doloremque doloribus, est facere modi perferendis perspiciatis quam quod, ut voluptatem voluptatum. Animi beatae id odio quis sed?"
+          },
+          {
+            "title": "Product 000002",
+            "link": "product/000002",
+            "imagePath": "../../assets/img/card-sample.png",
+            "imageAlt": "Product Image",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad autem, consequatur dicta doloremque doloribus, est facere modi perferendis perspiciatis quam quod, ut voluptatem voluptatum. Animi beatae id odio quis sed?"
+          },
+          {
+            "title": "Product 000003",
+            "link": "product/000003",
+            "imagePath": "../../assets/img/card-sample.png",
+            "imageAlt": "Product Image",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad autem, consequatur dicta doloremque doloribus, est facere modi perferendis perspiciatis quam quod, ut voluptatem voluptatum. Animi beatae id odio quis sed?"
+          },
+          {
+            "title": "Product 000004",
+            "link": "product/000004",
+            "imagePath": "../../assets/img/card-sample.png",
+            "imageAlt": "Product Image",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad autem, consequatur dicta doloremque doloribus, est facere modi perferendis perspiciatis quam quod, ut voluptatem voluptatum. Animi beatae id odio quis sed?"
+          },
+          {
+            "title": "Product 000005",
+            "link": "product/000005",
+            "imagePath": "../../assets/img/card-sample.png",
+            "imageAlt": "Product Image",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad autem, consequatur dicta doloremque doloribus, est facere modi perferendis perspiciatis quam quod, ut voluptatem voluptatum. Animi beatae id odio quis sed?"
+          },
+          {
+            "title": "Product 000006",
+            "link": "product/000006",
+            "imagePath": "../../assets/img/card-sample.png",
+            "imageAlt": "Product Image",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad autem, consequatur dicta doloremque doloribus, est facere modi perferendis perspiciatis quam quod, ut voluptatem voluptatum. Animi beatae id odio quis sed?"
+          },
+          {
+            "title": "Product 000007",
+            "link": "product/000007",
+            "imagePath": "../../assets/img/card-sample.png",
+            "imageAlt": "Product Image",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad autem, consequatur dicta doloremque doloribus, est facere modi perferendis perspiciatis quam quod, ut voluptatem voluptatum. Animi beatae id odio quis sed?"
+          },
+          {
+            "title": "Product 000008",
+            "link": "product/000008",
+            "imagePath": "../../assets/img/card-sample.png",
+            "imageAlt": "Product Image",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad autem, consequatur dicta doloremque doloribus, est facere modi perferendis perspiciatis quam quod, ut voluptatem voluptatum. Animi beatae id odio quis sed?"
+          },
+          {
+            "title": "Product 000009",
+            "link": "product/000009",
+            "imagePath": "../../assets/img/card-sample.png",
+            "imageAlt": "Product Image",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad autem, consequatur dicta doloremque doloribus, est facere modi perferendis perspiciatis quam quod, ut voluptatem voluptatum. Animi beatae id odio quis sed?"
+          },
+          {
+            "title": "Product 000010",
+            "link": "product/000010",
+            "imagePath": "../../assets/img/card-sample.png",
+            "imageAlt": "Product Image",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad autem, consequatur dicta doloremque doloribus, est facere modi perferendis perspiciatis quam quod, ut voluptatem voluptatum. Animi beatae id odio quis sed?"
+          },
+          {
+            "title": "Product 000011",
+            "link": "product/000011",
+            "imagePath": "../../assets/img/card-sample.png",
+            "imageAlt": "Product Image",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad autem, consequatur dicta doloremque doloribus, est facere modi perferendis perspiciatis quam quod, ut voluptatem voluptatum. Animi beatae id odio quis sed?"
+          },
+          {
+            "title": "Product 000012",
+            "link": "product/000012",
+            "imagePath": "../../assets/img/card-sample.png",
+            "imageAlt": "Product Image",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad autem, consequatur dicta doloremque doloribus, est facere modi perferendis perspiciatis quam quod, ut voluptatem voluptatum. Animi beatae id odio quis sed?"
+          },
+          {
+            "title": "Product 000013",
+            "link": "product/000013",
+            "imagePath": "../../assets/img/card-sample.png",
+            "imageAlt": "Product Image",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad autem, consequatur dicta doloremque doloribus, est facere modi perferendis perspiciatis quam quod, ut voluptatem voluptatum. Animi beatae id odio quis sed?"
+          },
+          {
+            "title": "Product 000014",
+            "link": "product/000014",
+            "imagePath": "../../assets/img/card-sample.png",
+            "imageAlt": "Product Image",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad autem, consequatur dicta doloremque doloribus, est facere modi perferendis perspiciatis quam quod, ut voluptatem voluptatum. Animi beatae id odio quis sed?"
+          },
+          {
+            "title": "Product 000015",
+            "link": "product/000015",
+            "imagePath": "../../assets/img/card-sample.png",
+            "imageAlt": "Product Image",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad autem, consequatur dicta doloremque doloribus, est facere modi perferendis perspiciatis quam quod, ut voluptatem voluptatum. Animi beatae id odio quis sed?"
+          },
+          {
+            "title": "Product 000016",
+            "link": "product/000016",
+            "imagePath": "../../assets/img/card-sample.png",
+            "imageAlt": "Product Image",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad autem, consequatur dicta doloremque doloribus, est facere modi perferendis perspiciatis quam quod, ut voluptatem voluptatum. Animi beatae id odio quis sed?"
+          },
+          {
+            "title": "Product 000017",
+            "link": "product/000017",
+            "imagePath": "../../assets/img/card-sample.png",
+            "imageAlt": "Product Image",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad autem, consequatur dicta doloremque doloribus, est facere modi perferendis perspiciatis quam quod, ut voluptatem voluptatum. Animi beatae id odio quis sed?"
+          },
+          {
+            "title": "Product 000018",
+            "link": "product/000018",
+            "imagePath": "../../assets/img/card-sample.png",
+            "imageAlt": "Product Image",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad autem, consequatur dicta doloremque doloribus, est facere modi perferendis perspiciatis quam quod, ut voluptatem voluptatum. Animi beatae id odio quis sed?"
+          },
+          {
+            "title": "Product 000019",
+            "link": "product/000019",
+            "imagePath": "../../assets/img/card-sample.png",
+            "imageAlt": "Product Image",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad autem, consequatur dicta doloremque doloribus, est facere modi perferendis perspiciatis quam quod, ut voluptatem voluptatum. Animi beatae id odio quis sed?"
+          },
+          {
+            "title": "Product 000020",
+            "link": "product/000020",
+            "imagePath": "../../assets/img/card-sample.png",
+            "imageAlt": "Product Image",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad autem, consequatur dicta doloremque doloribus, est facere modi perferendis perspiciatis quam quod, ut voluptatem voluptatum. Animi beatae id odio quis sed?"
+          }
+        ]
+      }
+    },
+    {
+      "locale": "de",
+      "content": {
+        "elements": [
+          {
+            "type": "h1",
+            "content": "Drittes Level Gruppe 14"
+          },
+          {
+            "type": "p",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad autem, consequatur dicta doloremque doloribus, est facere modi perferendis perspiciatis quam quod, ut voluptatem voluptatum. Animi beatae id odio quis sed?"
+          }
+        ],
+        "products": [
+          {
+            "title": "Produkt 000001",
+            "link": "product/000001",
+            "imagePath": "../../assets/img/card-sample.png",
+            "imageAlt": "Produktbild",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad autem, consequatur dicta doloremque doloribus, est facere modi perferendis perspiciatis quam quod, ut voluptatem voluptatum. Animi beatae id odio quis sed?"
+          },
+          {
+            "title": "Produkt 000002",
+            "link": "product/000002",
+            "imagePath": "../../assets/img/card-sample.png",
+            "imageAlt": "Produktbild",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad autem, consequatur dicta doloremque doloribus, est facere modi perferendis perspiciatis quam quod, ut voluptatem voluptatum. Animi beatae id odio quis sed?"
+          },
+          {
+            "title": "Produkt 000003",
+            "link": "product/000003",
+            "imagePath": "../../assets/img/card-sample.png",
+            "imageAlt": "Produktbild",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad autem, consequatur dicta doloremque doloribus, est facere modi perferendis perspiciatis quam quod, ut voluptatem voluptatum. Animi beatae id odio quis sed?"
+          },
+          {
+            "title": "Produkt 000004",
+            "link": "product/000004",
+            "imagePath": "../../assets/img/card-sample.png",
+            "imageAlt": "Produktbild",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad autem, consequatur dicta doloremque doloribus, est facere modi perferendis perspiciatis quam quod, ut voluptatem voluptatum. Animi beatae id odio quis sed?"
+          },
+          {
+            "title": "Produkt 000005",
+            "link": "product/000005",
+            "imagePath": "../../assets/img/card-sample.png",
+            "imageAlt": "Produktbild",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad autem, consequatur dicta doloremque doloribus, est facere modi perferendis perspiciatis quam quod, ut voluptatem voluptatum. Animi beatae id odio quis sed?"
+          },
+          {
+            "title": "Produkt 000006",
+            "link": "product/000006",
+            "imagePath": "../../assets/img/card-sample.png",
+            "imageAlt": "Produktbild",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad autem, consequatur dicta doloremque doloribus, est facere modi perferendis perspiciatis quam quod, ut voluptatem voluptatum. Animi beatae id odio quis sed?"
+          },
+          {
+            "title": "Produkt 000007",
+            "link": "product/000007",
+            "imagePath": "../../assets/img/card-sample.png",
+            "imageAlt": "Produktbild",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad autem, consequatur dicta doloremque doloribus, est facere modi perferendis perspiciatis quam quod, ut voluptatem voluptatum. Animi beatae id odio quis sed?"
+          },
+          {
+            "title": "Produkt 000008",
+            "link": "product/000008",
+            "imagePath": "../../assets/img/card-sample.png",
+            "imageAlt": "Produktbild",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad autem, consequatur dicta doloremque doloribus, est facere modi perferendis perspiciatis quam quod, ut voluptatem voluptatum. Animi beatae id odio quis sed?"
+          },
+          {
+            "title": "Produkt 000009",
+            "link": "product/000009",
+            "imagePath": "../../assets/img/card-sample.png",
+            "imageAlt": "Produktbild",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad autem, consequatur dicta doloremque doloribus, est facere modi perferendis perspiciatis quam quod, ut voluptatem voluptatum. Animi beatae id odio quis sed?"
+          },
+          {
+            "title": "Produkt 000010",
+            "link": "product/000010",
+            "imagePath": "../../assets/img/card-sample.png",
+            "imageAlt": "Produktbild",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad autem, consequatur dicta doloremque doloribus, est facere modi perferendis perspiciatis quam quod, ut voluptatem voluptatum. Animi beatae id odio quis sed?"
+          },
+          {
+            "title": "Produkt 000011",
+            "link": "product/000011",
+            "imagePath": "../../assets/img/card-sample.png",
+            "imageAlt": "Produktbild",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad autem, consequatur dicta doloremque doloribus, est facere modi perferendis perspiciatis quam quod, ut voluptatem voluptatum. Animi beatae id odio quis sed?"
+          },
+          {
+            "title": "Produkt 000012",
+            "link": "product/000012",
+            "imagePath": "../../assets/img/card-sample.png",
+            "imageAlt": "Produktbild",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad autem, consequatur dicta doloremque doloribus, est facere modi perferendis perspiciatis quam quod, ut voluptatem voluptatum. Animi beatae id odio quis sed?"
+          },
+          {
+            "title": "Produkt 000013",
+            "link": "product/000013",
+            "imagePath": "../../assets/img/card-sample.png",
+            "imageAlt": "Produktbild",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad autem, consequatur dicta doloremque doloribus, est facere modi perferendis perspiciatis quam quod, ut voluptatem voluptatum. Animi beatae id odio quis sed?"
+          },
+          {
+            "title": "Produkt 000014",
+            "link": "product/000014",
+            "imagePath": "../../assets/img/card-sample.png",
+            "imageAlt": "Produktbild",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad autem, consequatur dicta doloremque doloribus, est facere modi perferendis perspiciatis quam quod, ut voluptatem voluptatum. Animi beatae id odio quis sed?"
+          },
+          {
+            "title": "Produkt 000015",
+            "link": "product/000015",
+            "imagePath": "../../assets/img/card-sample.png",
+            "imageAlt": "Produktbild",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad autem, consequatur dicta doloremque doloribus, est facere modi perferendis perspiciatis quam quod, ut voluptatem voluptatum. Animi beatae id odio quis sed?"
+          },
+          {
+            "title": "Produkt 000016",
+            "link": "product/000016",
+            "imagePath": "../../assets/img/card-sample.png",
+            "imageAlt": "Produktbild",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad autem, consequatur dicta doloremque doloribus, est facere modi perferendis perspiciatis quam quod, ut voluptatem voluptatum. Animi beatae id odio quis sed?"
+          },
+          {
+            "title": "Produkt 000017",
+            "link": "product/000017",
+            "imagePath": "../../assets/img/card-sample.png",
+            "imageAlt": "Produktbild",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad autem, consequatur dicta doloremque doloribus, est facere modi perferendis perspiciatis quam quod, ut voluptatem voluptatum. Animi beatae id odio quis sed?"
+          },
+          {
+            "title": "Produkt 000018",
+            "link": "product/000018",
+            "imagePath": "../../assets/img/card-sample.png",
+            "imageAlt": "Produktbild",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad autem, consequatur dicta doloremque doloribus, est facere modi perferendis perspiciatis quam quod, ut voluptatem voluptatum. Animi beatae id odio quis sed?"
+          },
+          {
+            "title": "Produkt 000019",
+            "link": "product/000019",
+            "imagePath": "../../assets/img/card-sample.png",
+            "imageAlt": "Produktbild",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad autem, consequatur dicta doloremque doloribus, est facere modi perferendis perspiciatis quam quod, ut voluptatem voluptatum. Animi beatae id odio quis sed?"
+          },
+          {
+            "title": "Produkt 000020",
+            "link": "product/000020",
+            "imagePath": "../../assets/img/card-sample.png",
+            "imageAlt": "Produktbild",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad autem, consequatur dicta doloremque doloribus, est facere modi perferendis perspiciatis quam quod, ut voluptatem voluptatum. Animi beatae id odio quis sed?"
+          }
+        ]
+      }
+    }
+  ]
+}

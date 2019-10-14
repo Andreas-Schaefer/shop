@@ -19,3 +19,11 @@
   padding: 8px;
   white-space: nowrap;
 }
+
+.divider {
+  height: 1px;
+  width: 100%;
+  border-bottom: 1px solid #FF7700;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}

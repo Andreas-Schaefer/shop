@@ -4,11 +4,12 @@ export interface Menus {
 
 export interface LocaleMenu {
   locale: string;
-  menus: Menu[];
+  products: MenuEntry[];
+  other: MenuEntry[];
 }
 
-export interface Menu {
+export interface MenuEntry {
   path: string;
   display: string;
-  children: Menu[];
+  children: MenuEntry[];
 }

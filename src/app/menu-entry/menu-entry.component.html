@@ -1,5 +1,5 @@
 <div class="menu-entry-container">
-  <a (click)="onEntryClick()" [routerLink]="['/page', menuEntry.path]" routerLinkActive="active-link">
+  <a (click)="onEntryClick()" [routerLink]="menuEntry.path" routerLinkActive="active-link">
     <div [ngClass]="level === 0 ? 'level-1' : level === 1 ? 'level-2' : 'level-3'"
          class="menu-entry hover-light color-secondary">
       {{ menuEntry.display }}

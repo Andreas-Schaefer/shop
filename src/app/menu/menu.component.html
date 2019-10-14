@@ -5,7 +5,12 @@
          i18n="@@menu-close">
       CLOSE
     </div>
-    <div *ngFor="let menuEntry of menus | async">
+    <div class="divider hide-tablet hide-desktop"></div>
+    <div *ngFor="let menuEntry of products | async">
+      <app-menu-entry [level]="0" [menuEntry]="menuEntry"></app-menu-entry>
+    </div>
+    <div *ngIf="otherLength > 0" class="divider"></div>
+    <div *ngFor="let menuEntry of other | async">
       <app-menu-entry [level]="0" [menuEntry]="menuEntry"></app-menu-entry>
     </div>
   </div>

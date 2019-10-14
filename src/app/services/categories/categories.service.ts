@@ -1,8 +1,9 @@
 import {Inject, Injectable, LOCALE_ID} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
-import {Categories, CategoryContent, CategoryElement} from './categories';
+import {Categories, CategoryContent} from './categories';
 import {map} from 'rxjs/operators';
 import {Observable} from 'rxjs';
+import {DynamicContent} from '../../dynamic-content/dynamic-content';
 
 @Injectable({
   providedIn: 'root',
@@ -24,7 +25,7 @@ export class CategoriesService {
       }));
   }
 
-  public getCategoryContent(path: string): Observable<CategoryElement[]> {
+  public getCategoryContent(path: string): Observable<DynamicContent[]> {
     return this.http.get<CategoryContent>('/assets/categories/content-' + path + '.json')
       .pipe(map(data => {
         for (const localeCategoryContent of data.localeCategoryContents) {

@@ -6,7 +6,6 @@
 
 .header {
   display: flex;
-  horiz-align: center;
 }
 
 .logo {
@@ -120,6 +119,7 @@
   border-radius: 16px;
   padding: 5px 16px;
   margin: auto;
+  height: 26px;
 }
 
 /* Icons */

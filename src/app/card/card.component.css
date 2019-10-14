@@ -1,0 +1,21 @@
+.card-container {
+  width: 100%;
+  border: 1px solid #FF7700;
+  box-shadow: 2px 2px 8px rgba(9, 9, 9, 0.3);
+}
+
+.card-header {
+  font-size: x-large;
+  text-align: center;
+  border-bottom: 1px solid #FF7700;
+}
+
+.card-image {
+  text-align: center;
+  height: 200px;
+}
+
+.card-content {
+  border-top: 1px solid #FF7700;
+  text-align: center;
+}

@@ -1,3 +1,5 @@
+import {DynamicContent} from '../../dynamic-content/dynamic-content';
+
 export interface Categories {
   localeCategories: LocaleCategory[];
 }
@@ -18,11 +20,5 @@ export interface CategoryContent {
 
 export interface LocaleCategoryContent {
   locale: string;
-  path: string;
-  elements: CategoryElement[];
-}
-
-export interface CategoryElement {
-  type: string;
-  content: any;
+  elements: DynamicContent[];
 }

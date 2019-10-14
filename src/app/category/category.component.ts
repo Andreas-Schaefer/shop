@@ -1,9 +1,9 @@
 import {Component, OnInit} from '@angular/core';
-import {CategoryElement} from '../services/categories/categories';
 import {CategoriesService} from '../services/categories/categories.service';
 import {Observable} from 'rxjs';
 import {ActivatedRoute, ParamMap} from '@angular/router';
 import {switchMap} from 'rxjs/operators';
+import {DynamicContent} from '../dynamic-content/dynamic-content';
 
 @Component({
   selector: 'app-category',
@@ -12,7 +12,7 @@ import {switchMap} from 'rxjs/operators';
 })
 export class CategoryComponent implements OnInit {
 
-  elements: Observable<CategoryElement[]>;
+  elements: Observable<DynamicContent[]>;
 
   constructor(private categories: CategoriesService, private route: ActivatedRoute) {
   }

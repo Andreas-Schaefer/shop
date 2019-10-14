@@ -13,7 +13,10 @@ import {CategoryComponent} from './category/category.component';
 import {FocusDirective} from './directives/focus.directive';
 import {MenuComponent} from './menu/menu.component';
 import {MenuEntryComponent} from './menu-entry/menu-entry.component';
-import {PageComponent} from './page/page.component';
+import {ProductGroupComponent} from './product-group/product-group.component';
+import {CardComponent} from './card/card.component';
+import {DynamicContentComponent} from './dynamic-content/dynamic-content.component';
+import {DynamicComponent} from './dynamic/dynamic.component';
 
 registerLocaleData(localeDe);
 
@@ -26,7 +29,10 @@ registerLocaleData(localeDe);
     FocusDirective,
     MenuComponent,
     MenuEntryComponent,
-    PageComponent,
+    ProductGroupComponent,
+    CardComponent,
+    DynamicContentComponent,
+    DynamicComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,7 +40,8 @@ registerLocaleData(localeDe);
     RouterModule.forRoot([
       {path: '', component: WelcomeComponent},
       {path: 'category/:id', component: CategoryComponent},
-      {path: 'page/:id', component: PageComponent},
+      {path: 'products/:id', component: ProductGroupComponent},
+      {path: 'dynamic/:id', component: DynamicComponent},
     ])
   ],
   // providers: [{provide: LOCALE_ID, useValue: 'de'}],

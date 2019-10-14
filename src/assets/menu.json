@@ -1,0 +1,292 @@
+{
+  "localeMenus": [
+    {
+      "locale": "en-US",
+      "products": [
+        {
+          "path": "products/group1level1",
+          "display": "First level group 1",
+          "children": [
+            {
+              "path": "products/group1level2",
+              "display": "Second level group 1",
+              "children": [
+                {
+                  "path": "products/group1level3",
+                  "display": "Third level group 1",
+                  "children": []
+                },
+                {
+                  "path": "products/group2level3",
+                  "display": "Third level group 2",
+                  "children": []
+                },
+                {
+                  "path": "products/group3level3",
+                  "display": "Third level group 3",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "path": "products/group2level2",
+              "display": "Second level group 2",
+              "children": [
+                {
+                  "path": "products/group4level3",
+                  "display": "Third level group 4",
+                  "children": []
+                },
+                {
+                  "path": "products/group5level3",
+                  "display": "Third level group 5",
+                  "children": []
+                },
+                {
+                  "path": "products/group6level3",
+                  "display": "Third level group 6",
+                  "children": []
+                },
+                {
+                  "path": "products/group7level3",
+                  "display": "Third level group 7",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "path": "products/group3level2",
+              "display": "Second level group 3",
+              "children": [
+                {
+                  "path": "products/group8level3",
+                  "display": "Third level group 8",
+                  "children": []
+                },
+                {
+                  "path": "products/group9level3",
+                  "display": "Third level group 9",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "path": "products/group2level1",
+          "display": "First level group 2",
+          "children": [
+            {
+              "path": "products/group4level2",
+              "display": "Second level group 4",
+              "children": [
+                {
+                  "path": "products/group10level3",
+                  "display": "Third level group 10",
+                  "children": []
+                },
+                {
+                  "path": "products/group11level3",
+                  "display": "Third level group 11",
+                  "children": []
+                },
+                {
+                  "path": "products/group12level3",
+                  "display": "Third level group 12",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "path": "products/group5level2",
+              "display": "Second level group 5",
+              "children": [
+                {
+                  "path": "products/group13level3",
+                  "display": "Third level group 13",
+                  "children": []
+                },
+                {
+                  "path": "products/group14level3",
+                  "display": "Third level group 14",
+                  "children": []
+                },
+                {
+                  "path": "products/group15level3",
+                  "display": "Third level group 15",
+                  "children": []
+                },
+                {
+                  "path": "products/group16level3",
+                  "display": "Third level group 16",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "other": [
+        {
+          "path": "dynamic/aboutUs",
+          "display": "About Us",
+          "children": []
+        },
+        {
+          "path": "dynamic/contact",
+          "display": "Contact Us",
+          "children": []
+        },
+        {
+          "path": "dynamic/news",
+          "display": "News",
+          "children": []
+        }
+      ]
+    },
+    {
+      "locale": "de",
+      "products": [
+        {
+          "path": "products/group1level1",
+          "display": "Erstes Level Gruppe 1",
+          "children": [
+            {
+              "path": "products/group1level2",
+              "display": "Zweites Level Gruppe 1",
+              "children": [
+                {
+                  "path": "products/group1level3",
+                  "display": "Drittes Level Gruppe 1",
+                  "children": []
+                },
+                {
+                  "path": "products/group2level3",
+                  "display": "Drittes Level Gruppe 2",
+                  "children": []
+                },
+                {
+                  "path": "products/group3level3",
+                  "display": "Drittes Level Gruppe 3",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "path": "products/group2level2",
+              "display": "Zweites Level Gruppe 2",
+              "children": [
+                {
+                  "path": "products/group4level3",
+                  "display": "Drittes Level Gruppe 4",
+                  "children": []
+                },
+                {
+                  "path": "products/group5level3",
+                  "display": "Drittes Level Gruppe 5",
+                  "children": []
+                },
+                {
+                  "path": "products/group6level3",
+                  "display": "Drittes Level Gruppe 6",
+                  "children": []
+                },
+                {
+                  "path": "products/group7level3",
+                  "display": "Drittes Level Gruppe 7",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "path": "products/group3level2",
+              "display": "Zweites Level Gruppe 3",
+              "children": [
+                {
+                  "path": "products/group8level3",
+                  "display": "Drittes Level Gruppe 8",
+                  "children": []
+                },
+                {
+                  "path": "products/group9level3",
+                  "display": "Drittes Level Gruppe 9",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "path": "products/group2level1",
+          "display": "Erstes Level Gruppe 2",
+          "children": [
+            {
+              "path": "products/group4level2",
+              "display": "Zweites Level Gruppe 4",
+              "children": [
+                {
+                  "path": "products/group10level3",
+                  "display": "Drittes Level Gruppe 10",
+                  "children": []
+                },
+                {
+                  "path": "products/group11level3",
+                  "display": "Drittes Level Gruppe 11",
+                  "children": []
+                },
+                {
+                  "path": "products/group12level3",
+                  "display": "Drittes Level Gruppe 12",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "path": "products/group5level2",
+              "display": "Zweites Level Gruppe 5",
+              "children": [
+                {
+                  "path": "products/group13level3",
+                  "display": "Drittes Level Gruppe 13",
+                  "children": []
+                },
+                {
+                  "path": "products/group14level3",
+                  "display": "Drittes Level Gruppe 14",
+                  "children": []
+                },
+                {
+                  "path": "products/group15level3",
+                  "display": "Drittes Level Gruppe 15",
+                  "children": []
+                },
+                {
+                  "path": "products/group16level3",
+                  "display": "Drittes Level Gruppe 16",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "other": [
+        {
+          "path": "dynamic/aboutUs",
+          "display": "Impressum",
+          "children": []
+        },
+        {
+          "path": "dynamic/contact",
+          "display": "Kontakt",
+          "children": []
+        },
+        {
+          "path": "dynamic/news",
+          "display": "News",
+          "children": []
+        }
+      ]
+    }
+  ]
+}

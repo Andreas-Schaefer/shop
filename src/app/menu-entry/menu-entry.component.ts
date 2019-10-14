@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {Menu} from '../services/menu/menus';
+import {MenuEntry} from '../services/menu/menus';
 
 @Component({
   selector: 'app-menu-entry',
@@ -8,7 +8,7 @@ import {Menu} from '../services/menu/menus';
 })
 export class MenuEntryComponent implements OnInit {
 
-  @Input() menuEntry: Menu;
+  @Input() menuEntry: MenuEntry;
   @Input() level: number;
   childrenVisible = false;
 

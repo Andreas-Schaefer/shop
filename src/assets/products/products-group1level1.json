@@ -1,0 +1,80 @@
+{
+  "localeProducts": [
+    {
+      "locale": "en-US",
+      "content": {
+        "elements": [
+          {
+            "type": "h1",
+            "content": "First level group 1"
+          },
+          {
+            "type": "p",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad autem, consequatur dicta doloremque doloribus, est facere modi perferendis perspiciatis quam quod, ut voluptatem voluptatum. Animi beatae id odio quis sed?"
+          }
+        ],
+        "products": [
+          {
+            "title": "Second level group 1",
+            "link": "products/group1level2",
+            "imagePath": "../../assets/img/card-sample.png",
+            "imageAlt": "Product Group Image",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad autem, consequatur dicta doloremque doloribus, est facere modi perferendis perspiciatis quam quod, ut voluptatem voluptatum. Animi beatae id odio quis sed?"
+          },
+          {
+            "title": "Second level group 2",
+            "link": "products/group2level2",
+            "imagePath": "../../assets/img/card-sample.png",
+            "imageAlt": "Product Group Image",
+            "description": "Animi beatae id odio quis sed?"
+          },
+          {
+            "title": "Second level group 3",
+            "link": "products/group3level2",
+            "imagePath": "../../assets/img/card-sample.png",
+            "imageAlt": "Product Group Image",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi beatae id odio quis sed?"
+          }
+        ]
+      }
+    },
+    {
+      "locale": "de",
+      "content": {
+        "elements": [
+          {
+            "type": "h1",
+            "content": "Erstes Level Gruppe 1"
+          },
+          {
+            "type": "p",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad autem, consequatur dicta doloremque doloribus, est facere modi perferendis perspiciatis quam quod, ut voluptatem voluptatum. Animi beatae id odio quis sed?"
+          }
+        ],
+        "products": [
+          {
+            "title": "Zweites Level Gruppe 1",
+            "link": "products/group1level2",
+            "imagePath": "../../assets/img/card-sample.png",
+            "imageAlt": "Produktgruppen Bild",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad autem, consequatur dicta doloremque doloribus, est facere modi perferendis perspiciatis quam quod, ut voluptatem voluptatum. Animi beatae id odio quis sed?"
+          },
+          {
+            "title": "Zweites Level Gruppe 2",
+            "link": "products/group2level2",
+            "imagePath": "../../assets/img/card-sample.png",
+            "imageAlt": "Produktgruppen Bild",
+            "description": "Animi beatae id odio quis sed?"
+          },
+          {
+            "title": "Zweites Level Gruppe 3",
+            "link": "products/group3level2",
+            "imagePath": "../../assets/img/card-sample.png",
+            "imageAlt": "Produktgruppen Bild",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi beatae id odio quis sed?"
+          }
+        ]
+      }
+    }
+  ]
+}

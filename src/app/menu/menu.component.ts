@@ -1,5 +1,6 @@
 import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 import {MenuService} from '../services/menu/menu.service';
+import {tap} from 'rxjs/operators';
 
 @Component({
   selector: 'app-menu',
@@ -9,13 +10,18 @@ import {MenuService} from '../services/menu/menu.service';
 export class MenuComponent implements OnInit {
 
   @Output() hideMenu: EventEmitter<void> = new EventEmitter<void>();
-  menus;
+  products;
+  other;
+  otherLength = 0;
 
   constructor(private menuService: MenuService) {
   }
 
   ngOnInit() {
-    this.menus = this.menuService.getMenus();
+    this.products = this.menuService.getProducts();
+    this.other = this.menuService.getOther().pipe(tap(data => {
+      this.otherLength = data.length;
+    }));
   }
 
   onHideMenu() {
