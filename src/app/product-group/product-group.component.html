@@ -1,12 +1,13 @@
-<!--<div *ngIf="sizeMode === 0" class="flex">-->
 <div class="page-elements">
   <app-dynamic-content [elements]="elements"></app-dynamic-content>
 </div>
-<div class="container flex">
-  <app-card *ngFor="let product of products | async" [cardDescription]="product.description"
+<div *ngIf="sizeMode !== 0" class="container flex">
+  <app-card *ngFor="let product of products | async" [cardDescription]="product.description" [cardLink]="product.link"
             [cardHeader]="product.title" [cardImageAlt]="product.imageAlt" [cardImageSrc]="product.imagePath"
             [ngClass]="cardStyle"></app-card>
   <div *ngIf="sizeMode === 1 && productsLength % 2 === 1" class="two-column"></div>
   <div *ngIf="sizeMode === 2 && productsLength % 3 === 1" class="three-column"></div>
-  <div *ngIf="sizeMode === 2 && productsLength === 2" class="three-column"></div>
+  <div *ngIf="sizeMode === 2 && productsLength % 3 === 2" class="three-column"></div>
 </div>
+<app-card-switcher *ngIf="sizeMode === 0" [products]="products | async"></app-card-switcher>
+

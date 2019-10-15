@@ -17,6 +17,9 @@ import {ProductGroupComponent} from './product-group/product-group.component';
 import {CardComponent} from './card/card.component';
 import {DynamicContentComponent} from './dynamic-content/dynamic-content.component';
 import {DynamicComponent} from './dynamic/dynamic.component';
+import {ContactComponent} from './contact/contact.component';
+import {ProductDetailComponent} from './product-detail/product-detail.component';
+import {CardSwitcherComponent} from './card-switcher/card-switcher.component';
 
 registerLocaleData(localeDe);
 
@@ -33,6 +36,9 @@ registerLocaleData(localeDe);
     CardComponent,
     DynamicContentComponent,
     DynamicComponent,
+    ContactComponent,
+    ProductDetailComponent,
+    CardSwitcherComponent,
   ],
   imports: [
     BrowserModule,
@@ -41,7 +47,9 @@ registerLocaleData(localeDe);
       {path: '', component: WelcomeComponent},
       {path: 'category/:id', component: CategoryComponent},
       {path: 'products/:id', component: ProductGroupComponent},
+      {path: 'product/:id', component: ProductDetailComponent},
       {path: 'dynamic/:id', component: DynamicComponent},
+      {path: 'contact', component: ContactComponent},
     ])
   ],
   // providers: [{provide: LOCALE_ID, useValue: 'de'}],

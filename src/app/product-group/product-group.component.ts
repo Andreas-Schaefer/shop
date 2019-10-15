@@ -46,6 +46,6 @@ export class ProductGroupComponent implements OnInit {
   }
 
   private updateCardStyle() {
-    this.cardStyle = this.sizeMode === SizeMode.MOBILE ? 'one-row' : this.sizeMode === SizeMode.TABLET ? 'two-column' : 'three-column';
+    this.cardStyle = this.sizeMode === SizeMode.TABLET ? 'two-column' : 'three-column';
   }
 }

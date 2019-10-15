@@ -1,0 +1,54 @@
+{
+  "localeDynamicElements": [
+    {
+      "locale": "en-US",
+      "dynamicElements": [
+        {
+          "type": "h1",
+          "content": "Terms & Conditions"
+        },
+        {
+          "type": "p",
+          "content": "Here you can find our terms and conditions"
+        },
+        {
+          "type": "p",
+          "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium architecto aut culpa ea eum explicabo facilis incidunt provident, quaerat qui quo quod recusandae sed sunt suscipit tempore vitae. Maxime, nesciunt."
+        },
+        {
+          "type": "p",
+          "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium architecto aut culpa ea eum explicabo facilis incidunt provident, quaerat qui quo quod recusandae sed sunt suscipit tempore vitae. Maxime, nesciunt."
+        },
+        {
+          "type": "p",
+          "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium architecto aut culpa ea eum explicabo facilis incidunt provident, quaerat qui quo quod recusandae sed sunt suscipit tempore vitae. Maxime, nesciunt."
+        }
+      ]
+    },
+    {
+      "locale": "de",
+      "dynamicElements": [
+        {
+          "type": "h1",
+          "content": "Allgemeine Geschäftsbedingungen"
+        },
+        {
+          "type": "p",
+          "content": "Hier finden Sie unsere allgemeinen Geschäftsbedingungen."
+        },
+        {
+          "type": "p",
+          "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium architecto aut culpa ea eum explicabo facilis incidunt provident, quaerat qui quo quod recusandae sed sunt suscipit tempore vitae. Maxime, nesciunt."
+        },
+        {
+          "type": "p",
+          "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium architecto aut culpa ea eum explicabo facilis incidunt provident, quaerat qui quo quod recusandae sed sunt suscipit tempore vitae. Maxime, nesciunt."
+        },
+        {
+          "type": "p",
+          "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium architecto aut culpa ea eum explicabo facilis incidunt provident, quaerat qui quo quod recusandae sed sunt suscipit tempore vitae. Maxime, nesciunt."
+        }
+      ]
+    }
+  ]
+}

@@ -6,6 +6,6 @@
     </div>
   </a>
   <div *ngFor="let childEntry of menuEntry.children" [ngClass]="childrenVisible ? '' : 'hide'" class="sub-menu">
-    <app-menu-entry [level]="level + 1" [menuEntry]="childEntry"></app-menu-entry>
+    <app-menu-entry (closeMenu)="onCloseMenu()" [level]="level + 1" [menuEntry]="childEntry"></app-menu-entry>
   </div>
 </div>

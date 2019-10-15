@@ -5,6 +5,7 @@ import {Router, RoutesRecognized} from '@angular/router';
 import {filter, map, tap} from 'rxjs/operators';
 import {merge, Subject} from 'rxjs';
 import {detectSizeMode, SizeMode} from '../services/responsive/responsive';
+import {MenuService} from '../services/menu/menu.service';
 
 @Component({
   selector: 'app-top-header',
@@ -27,11 +28,12 @@ export class HeaderComponent implements OnInit {
   categoriesArray;
   currentUrl;
   routerEvents;
-  activeCategory;
+  activePage;
   searchFieldVisible = false;
 
   constructor(
     private categoriesService: CategoriesService,
+    private menuService: MenuService,
     private cartService: CartService,
     private router: Router
   ) {
@@ -44,10 +46,22 @@ export class HeaderComponent implements OnInit {
     this.routerEvents = this.router.events
       .pipe(filter(event => event instanceof RoutesRecognized))
       .pipe(map((value: RoutesRecognized) => value.urlAfterRedirects))
-      .pipe(tap(url => this.currentUrl = url));
-    merge(this.categories, this.routerEvents).subscribe(() => this.updateActiveCategory());
+      .pipe(tap(url => this.currentUrl = url))
+      .pipe(tap(() => this.scrollToTop()));
+    merge(this.categories, this.routerEvents).subscribe(() => this.updateActivePage());
     this.cartService.registerOnChange(() => this.updateCartStyle());
     this.outerClickObserver.subscribe(() => this.closeOpenMenus());
+  }
+
+  private scrollToTop() {
+    // because of responsive styling with fixed/absolute containers scrolling only works
+    // when the right container is scrolled.
+    // window.scroll(0, 0);
+    if (this.sizeMode === SizeMode.MOBILE) {
+      window.document.getElementsByClassName('main-content')[0].scroll(0, 0);
+    } else {
+      window.document.getElementsByClassName('content-container')[0].scroll(0, 0);
+    }
   }
 
   @HostListener('window:resize', ['$event'])
@@ -95,17 +109,28 @@ export class HeaderComponent implements OnInit {
     this.categoriesOpened = !this.categoriesOpened;
   }
 
-  private updateActiveCategory() {
-    if (typeof this.categoriesArray === 'undefined' || typeof this.currentUrl === 'undefined') {
+  private updateActivePage() {
+    if (typeof this.currentUrl === 'undefined') {
       return;
     }
-    for (const category of this.categoriesArray) {
-      if (this.currentUrl.startsWith('/category/' + category.path)) {
-        this.activeCategory = category.display;
+    if (this.currentUrl.startsWith('/category')) {
+      if (typeof this.categoriesArray === 'undefined') {
         return;
       }
+      this.activePage = this.readCurrentPageFromCategories();
+    } else {
+      const searchPath = this.currentUrl.substring(1);  // the first '/' from the current url must be removed!
+      this.activePage = this.menuService.getDisplayForPath(this.currentUrl.substring(1));
     }
-    this.activeCategory = '';
+  }
+
+  private readCurrentPageFromCategories() {
+    for (const category of this.categoriesArray) {
+      if (this.currentUrl.startsWith('/category/' + category.path)) {
+        return category.display;
+      }
+    }
+    return '';
   }
 
   private closeOpenMenus() {

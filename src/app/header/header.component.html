@@ -13,7 +13,7 @@
       <div class="header-menu icon" (click)="onMenu()"
            i18n-title="@@header-menu-title" title="open menu"></div>
     </div>
-    <div *ngIf="!searchFieldVisible" class="center active-category">{{ activeCategory }}</div>
+    <div *ngIf="!searchFieldVisible" class="center active-category">{{ activePage }}</div>
     <div class="right">
       <div *ngIf="searchFieldVisible" class="header-search-area">
         <input #search (keyup.enter)=" onSearch(search.value);"
@@ -79,7 +79,7 @@
   </div>
 </div>
 <div [ngClass]="menuOpened && sizeMode === 1 ? '' : 'hide'" class="menu-overlay bg-color-secondary">
-  <app-menu></app-menu>
+  <app-menu (hideMenu)="onMenu()"></app-menu>
 </div>
 <!-- Desktop -->
 <div *ngIf="sizeMode === 2" class="bg-color-primary header-container">

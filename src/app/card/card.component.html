@@ -1,11 +1,13 @@
-<div class="card-container">
-  <div class="card-header bg-color-primary color-primary">
-    {{ cardHeader }}
+<a [routerLink]="'../../' + cardLink">
+  <div class="card-container">
+    <div class="card-header bg-color-primary color-primary">
+      {{ cardHeader }}
+    </div>
+    <div class="card-image">
+      <img [alt]="cardImageAlt" [src]="cardImageSrc">
+    </div>
+    <div class="card-content">
+      {{ cardDescription }}
+    </div>
   </div>
-  <div class="card-image">
-    <img [alt]="cardImageAlt" [src]="cardImageSrc">
-  </div>
-  <div class="card-content">
-    {{ cardDescription }}
-  </div>
-</div>
+</a>

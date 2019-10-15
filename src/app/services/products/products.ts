@@ -16,6 +16,7 @@ export interface ProductContent {
 
 export interface Product {
   title: string;
+  link: string;
   imagePath: string;
   imageAlt: string;
   description: string;

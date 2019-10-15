@@ -133,7 +133,12 @@
           "children": []
         },
         {
-          "path": "dynamic/contact",
+          "path": "dynamic/terms",
+          "display": "Terms & Conditions",
+          "children": []
+        },
+        {
+          "path": "contact",
           "display": "Contact Us",
           "children": []
         },
@@ -277,7 +282,12 @@
           "children": []
         },
         {
-          "path": "dynamic/contact",
+          "path": "dynamic/terms",
+          "display": "AGBs",
+          "children": []
+        },
+        {
+          "path": "contact",
           "display": "Kontakt",
           "children": []
         },

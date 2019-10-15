@@ -1,0 +1,14 @@
+<div *ngIf="hasProducts()" class="container">
+  <app-card [cardDescription]="products[currentIndex].description" [cardHeader]="products[currentIndex].title"
+            [cardImageAlt]="products[currentIndex].imageAlt"
+            [cardImageSrc]="products[currentIndex].imagePath" [cardLink]="products[currentIndex].link"
+            class="card">
+  </app-card>
+  <div class="flex">
+    <div class="center">
+      <div (click)="onPrevious()" *ngIf="currentIndex > 0" class="previous icon"><</div>
+      <div *ngIf="currentIndex === 0 || currentIndex === products.length - 1" class="spacer"></div>
+      <div (click)="onNext()" *ngIf="currentIndex < products.length - 1" class="next icon">></div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+.container {
+
+}
+
+.previous {
+  cursor: pointer;
+  padding: 12px;
+}
+
+.next {
+  cursor: pointer;
+  padding: 12px;
+}
+
+.spacer {
+  width: 32px;
+  height: 32px;
+  padding: 12px;
+}
