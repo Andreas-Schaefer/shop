@@ -20,6 +20,7 @@ import {DynamicComponent} from './dynamic/dynamic.component';
 import {ContactComponent} from './contact/contact.component';
 import {ProductDetailComponent} from './product-detail/product-detail.component';
 import {CardSwitcherComponent} from './card-switcher/card-switcher.component';
+import {ReactiveFormsModule} from '@angular/forms';
 
 registerLocaleData(localeDe);
 
@@ -50,7 +51,8 @@ registerLocaleData(localeDe);
       {path: 'product/:id', component: ProductDetailComponent},
       {path: 'dynamic/:id', component: DynamicComponent},
       {path: 'contact', component: ContactComponent},
-    ])
+    ]),
+    ReactiveFormsModule
   ],
   // providers: [{provide: LOCALE_ID, useValue: 'de'}],
   bootstrap: [AppComponent]

@@ -1,1 +1,71 @@
-<p>contact works!</p>
+<h1 i18n="@@contact-headline">Contact us</h1>
+<p i18n="@@contact-description">
+  Here you can send us a mail if you have a question to a product or our delivery costs.
+</p>
+<form (ngSubmit)="onSubmit()" [formGroup]="contactForm">
+  <label>
+    <div class="form-line flex">
+      <div class="form-label" i18n="@@contact-name-label">
+        Name*
+      </div>
+      <div class="form-field-container" id="name">
+        <input class="form-field" formControlName="name" type="text">
+        <div *ngIf="name.invalid && (name.dirty || name.touched)" class="form-error-container">
+          <div *ngIf="name.errors.required" class="form-error" i18n="@@contact-name-required-error">
+            Please enter a name that we can use to contact you.
+          </div>
+        </div>
+      </div>
+    </div>
+  </label>
+  <label>
+    <div class="form-line flex">
+      <div class="form-label" i18n="@@contact-email-label">
+        Email*
+      </div>
+      <div class="form-field-container">
+        <input class="form-field" formControlName="email" type="email">
+        <div *ngIf="email.invalid && (email.dirty || email.touched)" class="form-error-container">
+          <div *ngIf="email.errors.required" class="form-error" i18n="@@contact-email-required-error">
+            Please enter an email address that we can use to contact you.
+          </div>
+          <div *ngIf="email.errors.email" class="form-error" i18n="@@contact-email-syntax-error">
+            The email you entered is not a valid email address.
+          </div>
+        </div>
+      </div>
+    </div>
+  </label>
+  <label>
+    <div class="form-line flex">
+      <div class="form-label" i18n="@@contact-message-label">
+        Message*
+      </div>
+      <div class="form-field-container">
+        <textarea class="form-field" formControlName="message" id="messageBox" rows="10"></textarea>
+        <br>
+        <span i18n="@@contact-message-characters-left">{{ messageLength | number }} characters left</span>
+        <div *ngIf="message.invalid && (message.dirty || message.touched)" class="form-error-container">
+          <div *ngIf="message.errors.required" class="form-error"
+               i18n="@@contact-message-required-error">
+            Please enter your message first.
+          </div>
+          <div *ngIf="message.errors.minlength" class="form-error"
+               i18n="@@contact-message-min-length-error">
+            The message you entered is to short.
+          </div>
+          <div *ngIf="message.errors.maxlength" class="form-error"
+               i18n="@@contact-message-min-length-error">
+            The message you entered is to long. Please use at most {{1000 | number}} characters.
+          </div>
+        </div>
+      </div>
+    </div>
+  </label>
+  <div class="form-line flex">
+    <div class="form-label"></div>
+    <div class="form-field-container">
+      <button i18n="@@contact-submit-button" type="submit">Send</button>
+    </div>
+  </div>
+</form>

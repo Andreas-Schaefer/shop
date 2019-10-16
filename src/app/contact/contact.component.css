@@ -1,0 +1,36 @@
+.form-line {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  flex-wrap: wrap;
+}
+
+.form-label {
+  width: 200px;
+  padding-bottom: 4px;
+}
+
+.form-field-container {
+  width: 95%;
+  min-width: 250px;
+  max-width: 500px;
+}
+
+.form-field {
+  width: 100%;
+}
+
+.form-error-container {
+  margin-top: 8px;
+  background-color: #F0523E;
+  padding: 4px;
+}
+
+.form-error {
+  color: #FFFFFF;
+}
+
+@media (max-width: 512px) {
+  .form-label {
+    width: 100%;
+  }
+}

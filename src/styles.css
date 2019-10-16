@@ -1,4 +1,38 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+  font-family: Calibri, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #FF7700;
+}
+
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+}
+
+button {
+  background-color: #FF7700;
+  color: #FFFFFF;
+  border: 0;
+  font-size: large;
+  padding: 8px;
+  min-width: 150px;
+}
+
+button:focus {
+  font-weight: bold;
+}
+
+input:focus, input:active, input:hover, textarea:focus, textarea:active, textarea:hover {
+  border: 1px solid #FF7700;
+  padding: 2px;
+}
+
+textarea {
+  resize: none;
+}
+
 .bg-color-primary {
   background-color: #FF7700;
 }
@@ -44,24 +78,10 @@
 }
 
 .img-button {
+  background-size: contain;
+  background-repeat: no-repeat;
   width: 64px;
   height: 64px;
-}
-
-a:link {
-  text-decoration: none;
-}
-
-a:visited {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-a:active {
-  text-decoration: none;
 }
 
 .hover-light:hover {
@@ -92,8 +112,4 @@ a:active {
   .hide-mobile {
     display: none !important;
   }
-}
-
-body {
-  margin: 0;
 }
