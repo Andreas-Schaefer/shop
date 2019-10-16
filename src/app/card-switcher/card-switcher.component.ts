@@ -38,10 +38,5 @@ export class CardSwitcherComponent implements OnInit {
 
   hasProducts() {
     return typeof this.products !== 'undefined' && this.products !== null && this.products.length > 0;
-    // if (notNull) {
-    //   return notNull && this.products.length > 0;
-    // }
-    // const notEmpty =
-    // return typeof this.products !== 'undefined' && this.products.length > 0;
   }
 }

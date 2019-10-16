@@ -43,6 +43,11 @@
   height: 32px;
 }
 
+.img-button {
+  width: 64px;
+  height: 64px;
+}
+
 a:link {
   text-decoration: none;
 }

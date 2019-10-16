@@ -3,17 +3,19 @@
 }
 
 .previous {
+  background-image: url("../../assets/img/prev.png");
   cursor: pointer;
-  padding: 12px;
+  margin: 12px;
 }
 
 .next {
+  background-image: url("../../assets/img/next.png");
   cursor: pointer;
-  padding: 12px;
+  margin: 12px;
 }
 
 .spacer {
-  width: 32px;
-  height: 32px;
-  padding: 12px;
+  width: 64px;
+  height: 64px;
+  margin: 12px;
 }

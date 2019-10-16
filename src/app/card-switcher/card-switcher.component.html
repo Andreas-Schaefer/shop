@@ -6,9 +6,9 @@
   </app-card>
   <div class="flex">
     <div class="center">
-      <div (click)="onPrevious()" *ngIf="currentIndex > 0" class="previous icon"><</div>
+      <div (click)="onPrevious()" *ngIf="currentIndex > 0" class="previous img-button"></div>
       <div *ngIf="currentIndex === 0 || currentIndex === products.length - 1" class="spacer"></div>
-      <div (click)="onNext()" *ngIf="currentIndex < products.length - 1" class="next icon">></div>
+      <div (click)="onNext()" *ngIf="currentIndex < products.length - 1" class="next img-button"></div>
     </div>
   </div>
 </div>
