@@ -19,14 +19,21 @@
   width: 100%;
 }
 
+.form-field.ng-invalid.ng-touched {
+  border: 1px solid #F0523E;
+}
+
 .form-error-container {
   margin-top: 8px;
   background-color: #F0523E;
-  padding: 4px;
+  width: 100%;
+  padding: 2px;
+  border: 1px solid #F0523E;
 }
 
 .form-error {
   color: #FFFFFF;
+  padding: 2px;
 }
 
 @media (max-width: 512px) {

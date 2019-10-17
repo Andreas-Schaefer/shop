@@ -29,6 +29,10 @@ input:focus, input:active, input:hover, textarea:focus, textarea:active, textare
   padding: 2px;
 }
 
+input, textarea {
+  padding: 2px;
+}
+
 textarea {
   resize: none;
 }
