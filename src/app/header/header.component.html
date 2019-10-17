@@ -5,7 +5,7 @@
     <div class="center">
       <a routerLink=""><img class="logo" src="../../assets/img/logo.png"
                             alt="Shop Logo" i18n-alt="@@header-logo-alt"></a>
-      <div class="header-text" i18n="@@header-text">Welcome to the Shop!</div>
+      <div class="header-text" i18n="@@header-text">bee shopping</div>
     </div>
   </div>
   <div class="flex toolbar">
@@ -37,11 +37,12 @@
 </div>
 <div *ngIf="categoriesOpened && sizeMode === 0" class="categories-overlay bg-color-primary">
   <div>
-    <div class="header-overlay-category hover-dark"
-         [ngClass]="categoriesArray.indexOf(category) % 2 === 0 ? 'header-overlay-category-zebra' : ''"
-         *ngFor="let category of categories | async">
+    <div *ngFor="let category of categories | async">
       <a class="color-primary" [routerLink]="['/category', category.path]" (click)="onCategories()">
-        {{ category.display }}
+        <div [ngClass]="categoriesArray.indexOf(category) % 2 === 0 ? 'header-overlay-category-zebra' : ''"
+             class="header-overlay-category hover-dark">
+          {{ category.display }}
+        </div>
       </a>
     </div>
   </div>
@@ -54,7 +55,7 @@
            i18n-title="@@header-menu-title" title="open menu"></div>
       <a routerLink=""><img class="logo" src="../../assets/img/logo.png"
                             i18n-alt="@@header-logo-alt" alt="Shop Logo"></a>
-      <div *ngIf="!searchFieldVisible" class="header-text" i18n="@@header-text">Welcome to the Shop!</div>
+      <div class="header-text" i18n="@@header-text">bee shopping</div>
     </div>
     <div class="right">
       <div *ngIf="searchFieldVisible" class="header-search-area">
@@ -87,10 +88,10 @@
     <div class="left">
       <a routerLink=""><img class="logo" src="../../assets/img/logo.png"
                             i18n-alt="@@header-logo-alt" alt="Shop Logo"></a>
-      <div class="header-text" i18n="@@header-text">Welcome to the Shop!</div>
+      <div class="header-text" i18n="@@header-text">bee shopping</div>
     </div>
     <div class="right">
-      <div *ngIf="!searchFieldVisible" class="header-categories">
+      <div class="header-categories">
         <div *ngFor="let category of categories | async" routerLinkActive="active-link">
           <a [routerLink]="['/category', category.path]" class="header-category hover-dark">{{ category.display }}</a>
         </div>

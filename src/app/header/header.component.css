@@ -17,6 +17,7 @@
   font-size: xx-large;
   color: white;
   padding-top: 6px;
+  white-space: nowrap;
 }
 
 .subheader-text {
@@ -97,13 +98,7 @@
   white-space: nowrap;
   font-size: large;
   border: 0;
-  border-bottom: 1px solid #FFFFFF;
-}
-
-.header-overlay-category:first-child {
-  border-top: solid;
-  border-top-width: 1px;
-  border-top-color: #FFFFFF;
+  border-top: 1px solid #FFFFFF;
 }
 
 .toolbar .header-menu {
@@ -120,6 +115,7 @@
   padding: 5px 16px;
   margin: auto;
   height: 26px;
+  width: 100%;
 }
 
 /* Icons */

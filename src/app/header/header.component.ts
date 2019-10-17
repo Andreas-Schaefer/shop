@@ -51,6 +51,7 @@ export class HeaderComponent implements OnInit {
     merge(this.categories, this.routerEvents).subscribe(() => this.updateActivePage());
     this.cartService.registerOnChange(() => this.updateCartStyle());
     this.outerClickObserver.subscribe(() => this.closeOpenMenus());
+    this.updateActivePage();
   }
 
   private scrollToTop() {
@@ -58,9 +59,13 @@ export class HeaderComponent implements OnInit {
     // when the right container is scrolled.
     // window.scroll(0, 0);
     if (this.sizeMode === SizeMode.MOBILE) {
-      window.document.getElementsByClassName('main-content')[0].scroll(0, 0);
+      window.document.getElementsByClassName('header-container')[0].scrollIntoView();
     } else {
-      window.document.getElementsByClassName('content-container')[0].scroll(0, 0);
+      const contentContainer = window.document.getElementsByClassName('content-container')[0];
+      if (contentContainer.firstChild != null && contentContainer.firstChild instanceof Element) {
+        const firstChild: Element = contentContainer.firstChild;
+        firstChild.scrollIntoView();
+      }
     }
   }
 
