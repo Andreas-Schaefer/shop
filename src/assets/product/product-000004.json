@@ -1,0 +1,76 @@
+{
+  "localeProducts": [
+    {
+      "locale": "en-US",
+      "productDetail": {
+        "title": "Product 000004",
+        "link": "product/000004",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad autem, consequatur dicta doloremque doloribus, est facere modi perferendis perspiciatis quam quod, ut voluptatem voluptatum. Animi beatae id odio quis sed?",
+        "images": [
+          {
+            "imagePath": "../../assets/img/card-sample.png",
+            "imageAlt": "Product image 1"
+          },
+          {
+            "imagePath": "../../assets/img/card-sample.png",
+            "imageAlt": "Product image 2"
+          },
+          {
+            "imagePath": "../../assets/img/card-sample.png",
+            "imageAlt": "Product image 3"
+          }
+        ],
+        "options": [
+          {
+            "display": "red",
+            "price": 25.0
+          },
+          {
+            "display": "green",
+            "price": 30.0
+          },
+          {
+            "display": "blue",
+            "price": 27.0
+          }
+        ]
+      }
+    },
+    {
+      "locale": "de",
+      "productDetail": {
+        "title": "Produkt 000004",
+        "link": "product/000004",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad autem, consequatur dicta doloremque doloribus, est facere modi perferendis perspiciatis quam quod, ut voluptatem voluptatum. Animi beatae id odio quis sed?",
+        "images": [
+          {
+            "imagePath": "../../assets/img/card-sample.png",
+            "imageAlt": "Produktbild 1"
+          },
+          {
+            "imagePath": "../../assets/img/card-sample.png",
+            "imageAlt": "Produktbild 2"
+          },
+          {
+            "imagePath": "../../assets/img/card-sample.png",
+            "imageAlt": "Produktbild 3"
+          }
+        ],
+        "options": [
+          {
+            "display": "rot",
+            "price": 25.0
+          },
+          {
+            "display": "grün",
+            "price": 30.0
+          },
+          {
+            "display": "blau",
+            "price": 27.0
+          }
+        ]
+      }
+    }
+  ]
+}

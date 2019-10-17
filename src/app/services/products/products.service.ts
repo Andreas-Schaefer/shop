@@ -9,8 +9,6 @@ import {map} from 'rxjs/operators';
 })
 export class ProductsService {
 
-  productCache: Map<string, any>; // <id/data> caches info about products
-
   constructor(private http: HttpClient, @Inject(LOCALE_ID) private localeId: string) {
   }
 
@@ -24,10 +22,5 @@ export class ProductsService {
         }
         return {elements: [], products: []};
       }));
-  }
-
-  public getDisplayForPath(path: string): string {
-    // TODO call Backend-Service for real products and ask for detail
-    return '';
   }
 }

@@ -1,1 +1,15 @@
-<p>product-detail works!</p>
+<h1>{{ (productDetail | async).title }}</h1>
+<div *ngIf="productDetail" class="row">
+  <div class="column-container">
+    <div class="column">
+      <!--    <img *ngIf="(productDetail | async).images.length === 1"-->
+      <!--         [src]="(productDetail | async).images[0].imagePath" [alt]="(productDetail | async).images[0].imageAlt">-->
+      <img [alt]="(productDetail | async).images[0].imageAlt" [src]="(productDetail | async).images[0].imagePath">
+    </div>
+  </div>
+  <div class="column-container">
+    <div>
+      <p>{{ (productDetail | async).description }}</p>
+    </div>
+  </div>
+</div>

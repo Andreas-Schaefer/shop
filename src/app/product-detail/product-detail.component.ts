@@ -1,4 +1,9 @@
 import {Component, OnInit} from '@angular/core';
+import {ProductService} from '../services/product/product.service';
+import {ActivatedRoute, ParamMap} from '@angular/router';
+import {switchMap} from 'rxjs/operators';
+import {Observable} from 'rxjs';
+import {ProductDetail} from '../services/product/product';
 
 @Component({
   selector: 'app-product-detail',
@@ -7,10 +12,13 @@ import {Component, OnInit} from '@angular/core';
 })
 export class ProductDetailComponent implements OnInit {
 
-  constructor() {
+  productDetail: Observable<ProductDetail>;
+
+  constructor(private productService: ProductService, private route: ActivatedRoute) {
   }
 
   ngOnInit() {
+    this.productDetail = this.route.paramMap.pipe(switchMap((params: ParamMap) => this.productService.getProduct(params.get('id'))));
   }
 
 }
